@@ -1029,6 +1029,7 @@ table tr:hover .table-links {
   margin-top: -1px; }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  box-shadow: 0 1px 4px #acb5f6;
   color: #fff;
   background-color: #ef67b1; }
 
