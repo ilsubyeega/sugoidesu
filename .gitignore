@@ -3,6 +3,17 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Web based
+.htaccess
+pages/
+assets/img/
+assets/fonts/
+# Add Secure
+inc/sqlconfig.php
+
+# Remove Korean
+ko/
+
 # User-specific files
 *.suo
 *.user
