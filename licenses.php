@@ -54,6 +54,13 @@ include "inc/base1.php";
                           <p>Bancho server that is powerful by <a href="https://github.com/rumoi/">rumoi</a>.</p>
                         </div>
                       </div>
+					  <div class="media">
+                        <div class="media-icon"><i class="far fa-check-circle"></i></div>
+                        <div class="media-body">
+                          <h6>kyo-rs <a href="https://github.com/osukeesu/kyo-rs">(Source)</a> <a href="https://github.com/Marc3842h/kyo-rs">(Original Source)</a> &nbsp; <a href="https://github.com/Marc3842h/kyo-rs/blob/master/LICENSE.txt">GNU Lesser General Public License v3.0</a></h6>
+                          <p>Server Switcher which is beautiful by <a href="https://github.com/Marc3842h/">Marc3842h</a>.</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

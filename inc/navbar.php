@@ -7,7 +7,7 @@
 
 				<div>
 					<ul class="navbar-nav">
-						<li class="nav-item active"><a href="#" class="nav-link">Keesu</a></li>
+						<li class="nav-item active"><a href="/" class="nav-link">Keesu</a></li>
 					</ul>
 				</div>
 
