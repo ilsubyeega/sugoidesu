@@ -1,5 +1,6 @@
 # sugoidesu
 The WIP Project. Frontend, API, Admin Panel that compatible with ruri.
+This Project was for Keesu, But You can modify the files, But be careful about LICENSES!
 
 # This Project uses another repo.
 [ilsubyeega/stisla (stisla/stisla)](https://github.com/ilsubyeega/stisla) MIT
@@ -11,6 +12,7 @@ The WIP Project. Frontend, API, Admin Panel that compatible with ruri.
 
 # Lang
 - PHP
+- HTML/CSS/JS
 
 # When?
 I dont know
