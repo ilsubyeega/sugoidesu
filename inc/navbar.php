@@ -7,7 +7,10 @@
 
 				<div>
 					<ul class="navbar-nav">
-						<li class="nav-item active"><a href="/" class="nav-link">Keesu</a></li>
+						<a href="#" class="nav-link sidebar-gone-show" data-toggle="sidebar"><i class="fas fa-bars"></i></a>
+						<li class="nav-item active"><a href="/" class="nav-link">Keesu</a><div class="navbar-nav">
+          
+        </div></li>
 					</ul>
 				</div>
 
