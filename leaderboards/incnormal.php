@@ -15,7 +15,7 @@ $navbar_active[2] = "Leaderboards";
 # Header Settings (If is not sets, it won't be shown)
 
 
-$header['description'] = "";
+$header['description'] = "Taiko, CTB, Mania is currently not supported for pp. Score will still be saved for future calculations.";
 $header['button']['icon'] = "fas fa-exchange-alt";
 
 
