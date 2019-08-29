@@ -6,7 +6,6 @@
 # Web based
 .htaccess
 pages/
-assets/img/
 assets/fonts/
 # Add Secure
 inc/sqlconfig.php

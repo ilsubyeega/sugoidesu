@@ -1,0 +1,1 @@
+The directory was bad idea lol

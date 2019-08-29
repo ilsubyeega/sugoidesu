@@ -10,7 +10,7 @@ $navbar_active[2] = "Home";
 #$navbar_active[3] = "";
 
 # Header Settings (If is not sets, it won't be shown)
-$header['background_image'] = "/assets/img/unsplash/andre-benz-1214056-unsplash.jpg";
+$header['background_image'] = "/assets/img/background/bluenation.jpg";
 $header['title'] = "Home";
 $header['description'] = "";
 #$header['button']['text'] = "Change to Relax";
