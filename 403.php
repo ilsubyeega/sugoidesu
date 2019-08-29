@@ -10,7 +10,7 @@ $navbar_active[2] = "Error";
 #$navbar_active[3] = "";
 
 # Header Settings (If is not sets, it won't be shown)
-$header['background_image'] = "/assets/img/background/Lune.jpg";
+$header['background_image'] = "/assets/img/background/guineapigbridge.jpg";
 $header['title'] = "Error (Not Found)";
 $header['description'] = "";
 
@@ -24,16 +24,16 @@ include "inc/base1.php";
 ?>
 <div class="card">
                   <div class="card-header">
-                    <h4>Not Found</h4>
+                    <h4>No Permission</h4>
                   </div>
                   <div class="card-body">
                     <div class="empty-state" data-height="400" style="height: 400px;">
                       <div class="empty-state-icon bg-danger">
                         <i class="fas fa-times"></i>
                       </div>
-                      <h2>404 Not Found</h2>
+                      <h2>403 Forbidden</h2>
                       <p class="lead">
-                        We tried it, but there are no files about that.
+                        You dont enough permission to do that.
                       </p>
                       <a href="" class="btn btn-warning mt-4">Try Again</a>
                       <a href="/" class="mt-4 bb">Go to Home</a>

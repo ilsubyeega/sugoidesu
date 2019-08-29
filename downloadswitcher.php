@@ -10,7 +10,7 @@ $navbar_active[2] = "DownloadSwitcher";
 #$navbar_active[3] = "";
 
 # Header Settings (If is not sets, it won't be shown)
-$header['background_image'] = "/assets/img/unsplash/andre-benz-1214056-unsplash.jpg";
+$header['background_image'] = "/assets/img/background/heartnoatoaji3.jpg";
 $header['title'] = "Download Switcher";
 $header['description'] = "You can download server switchers here.";
 #$header['button']['text'] = "Change to Relax";

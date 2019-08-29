@@ -9,7 +9,7 @@ $navbar_active[1] = "Keesu";
 $navbar_active[2] = "Info";
 $navbar_active[3] = "Licenses";
 
-$header['background_image'] = "/assets/img/unsplash/andre-benz-1214056-unsplash.jpg";
+$header['background_image'] = "/assets/img/background/heartnoatoaji2.jpg";
 $header['title'] = "Licenses";
 $header['description'] = "";
 
