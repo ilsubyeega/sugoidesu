@@ -2949,3 +2949,16 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
   100% {
     -webkit-transform: scale(1.2, 1.2);
     opacity: 0.0; } }
+
+/* Custom */
+a:hover {
+	color: #aa4b9b;
+	text-decoration: none;
+}
+
+.leu-table-dont-color {
+	color: #435d83 !important;
+}
+.leu-table-active {
+	color: #c8006d !important;
+}
