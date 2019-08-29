@@ -1,0 +1,6 @@
+<?php
+$mysql_config['host'] = "localhost";
+$mysql_config['db'] = "osuserver";
+$mysql_config['id'] = "username";
+$mysql_config['pw'] = "password";
+?>
