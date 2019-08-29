@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- 
-  Webpage by ilsubyeega/sugoidesu
   Github: https://github.com/ilsubyeega/sugoidesu
   Discord: https://discord.gg/WU4FjHk
   This is LICENSED as GNU v3, So it should be sources public.
+
+  Made with 💙 by Stisla and ilsubyeega
 -->
 <head>
   <?
