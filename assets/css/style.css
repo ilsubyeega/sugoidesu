@@ -1544,7 +1544,6 @@ h6 .badge {
   align-items: center; }
   .navbar .navbar-brand {
     color: #fff;
-    text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 700; }
   .navbar .form-inline .form-control {
