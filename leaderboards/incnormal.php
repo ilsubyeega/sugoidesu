@@ -16,12 +16,7 @@ $navbar_active[2] = "Leaderboards";
 
 
 $header['description'] = "";
-if (!($relax==0 & $mode=="mania")){
-
 $header['button']['icon'] = "fas fa-exchange-alt";
-} else {
-	$header['description'] = "There is no Relax on mania :(";
-}
 
 
 
