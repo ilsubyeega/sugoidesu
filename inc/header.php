@@ -15,9 +15,10 @@
 
   ?>
   <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport"
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
   
-  
+
+<meta name="Description" content="Best osu! Server">
 <link rel="apple-touch-icon" sizes="57x57" href="/assets/icon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/assets/icon/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/assets/icon/apple-icon-72x72.png">
