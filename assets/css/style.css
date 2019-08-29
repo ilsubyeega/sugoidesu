@@ -2962,3 +2962,7 @@ a:hover {
 .leu-table-active {
 	color: #c8006d !important;
 }
+.leu-transparent {
+	color: transparent;
+	background-color: transparent;
+}
