@@ -70,6 +70,7 @@
                 <a href="auth-forgot-password.html" class="float-left mt-3">
                   Already have account?
                 </a>
+                <a href="/" class="btn btn-icon btn-danger btn-lg"><i class="fas fa-home"></i></a> &nbsp; 
                 <button type="submit" class="btn btn-primary btn-lg btn-icon icon-right" tabindex="4">
                   Register
                 </button>
