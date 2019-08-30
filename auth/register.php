@@ -166,7 +166,7 @@ Hello ".$username.", Congratulation for registering https://osu.leu.kr/ !\r\n
 Now we need email verification. Click the Link Down here.\r\n
 If you did not request this, please reply immediately to block this email.\r\n
 \r\n
-URL(주소): https://keesu.leu.kr/auth/email?user=".$username."key=".$verifykey;
+URL(주소): https://keesu.leu.kr/auth/email?user=".$username."&key=".$verifykey;
 
 
 			$mail->send();
