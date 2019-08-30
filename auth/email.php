@@ -110,7 +110,7 @@ if ($success==2){
 if ($success==2){
 	$ttt = $mysqli_r['username'];
 	$q="INSERT INTO `users` (`username`, `username_safe`, `password_md5`, `email`, `register_datetime`, `password_version`, `privileges`) VALUES ('".$mysqli_r['username']."', '".strtolower($ttt)."', '".$mysqli_r['password_md5']."', '".$mysqli_r['email']."', '".time()."', '10', 'idk')";
-	echo '<br>'.$q;
+	
 	if ($mysqli->query($q) === FALSE){
 		$success = 0;
 		$reason = "Something wrong with your registration. Please call moderator. (1)";
@@ -120,7 +120,7 @@ if ($success==2){
 // Get ID
 if ($success==2){
 	$q="SELECT * FROM `users` WHERE `username` = '".$mysqli_r['username']."' LIMIT 1;";
-	echo '<br>'.$q;
+	
 	if (!$mysqli_result = $mysqli->query($q)){
 		$success = 0;
 		$reason = "Something wrong with your registration. Please call moderator. (2)";
@@ -139,7 +139,7 @@ if ($success==2){
 
 if ($success==2){
 	$q="UPDATE `sugoidesu_emailverify` SET `verified`='1' WHERE  `username`='".$mysqli_r['username']."' AND `email`='".$mysqli_r['email']."' AND `verifycode`='".$mysqli_r['verifycode']."' AND `password_md5`='".$mysqli_r['password_md5']."' AND `requesttime`=".$mysqli_r['requesttime']." LIMIT 1;";
-	echo '<br>'.$q;
+	
 	if ($mysqli->query($q) === FALSE){
 		$success = 0;
 		$reason = "Something wrong with your registration. Please call moderator. (2)";
@@ -154,7 +154,7 @@ if ($success==2){
 // Finally, Lets Insert it
 if ($success==2){
 	$q="INSERT INTO `users_stats`(id, username, user_color, user_style, ranked_score_std, playcount_std, total_score_std, ranked_score_taiko, playcount_taiko, total_score_taiko, ranked_score_ctb, playcount_ctb, total_score_ctb, ranked_score_mania, playcount_mania, total_score_mania) VALUES (".$mysqli_e['id'].", '".$mysqli_r['username']."', 'black', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);";
-	echo '<br>'.$q;
+	
 	if ($mysqli->query($q) === FALSE){
 		$success = 0;
 		$reason = "Something wrong with your registration. Please call moderator. (4)";
@@ -167,7 +167,7 @@ if ($success==2){
 
 if ($success==2){
 	$q="INSERT INTO `rx_stats`(id, username, user_color, user_style, ranked_score_std, playcount_std, total_score_std, ranked_score_taiko, playcount_taiko, total_score_taiko, ranked_score_ctb, playcount_ctb, total_score_ctb, ranked_score_mania, playcount_mania, total_score_mania) VALUES (".$mysqli_e['id'].", '".$mysqli_r['username']."', 'black', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);";
-	echo '<br>'.$q;
+	
 	if ($mysqli->query($q) === FALSE){
 		$success = 0;
 		$reason = "Something wrong with your registration. Please call moderator. (5)";
