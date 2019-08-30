@@ -1,4 +1,12 @@
 <?
+#
+#
+# SugoiDesu! (https://github.com/ilsubyeega/sugoidesu)
+# This File is Licensed as GNU Affero General Public License v3.0
+# Find out more: https://github.com/ilsubyeega/sugoidesu/blob/master/LICENSE
+#
+#
+#
 include "../../inc/function.php";
 include "../../inc/sqlconfig.php";
 
@@ -68,10 +76,7 @@ include "../../inc/base1.php";
 $mysqli = new mysqli($mysql_config['host'], $mysql_config['id'], $mysql_config['pw'], $mysql_config['db']);
 if (!mysqli_connect_errno())
   {
-  if ($mysqli->connect_errno) {
-    echo "Error : (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-    }
-$res = $mysqli->query("SELECT  `id`,  `username`,  `total_score_".$mode."`, `pp_".$mode."`, `avg_accuracy_".$mode."`, `playcount_".$mode."` FROM `".$mysql_config['db']."`.`".$table."` ORDER BY `".$order_by."` DESC LIMIT 100;");
+    $res = $mysqli->query("SELECT  `id`,  `username`,  `total_score_".$mode."`, `pp_".$mode."`, `avg_accuracy_".$mode."`, `playcount_".$mode."` FROM `".$mysql_config['db']."`.`".$table."` ORDER BY `".$order_by."` DESC LIMIT 100;");
   } else {
 	  echo '<div class="row"><div class="col-12 col-md-12 col-sm-12"> <div class="card"> <div class="card-header"> <h4>Cannot connect to MySQL Server</h4> </div><div class="card-body"> <div class="empty-state" data-height="400" style="height: 400px;"> <div class="empty-state-icon"> <i class="fas fa-question"></i> </div><h2>'; echo "We couldn't find any data"; echo '</h2> <p class="lead">'; echo "We couldn't connect the server. Maybe Server Shutdowned? </p> </div></div></div>";
 	  exit;
