@@ -55,9 +55,14 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 	// Verify country is KR from ip.zxq.co
 	if (!($_SERVER['REMOTE_ADDR'] == "127.0.0.1" || $_SERVER['REMOTE_ADDR'] == "::1")){
 		$ip = $_SERVER['REMOTE_ADDR'];
-		$details = json_decode(file_get_contents("http://ip.zxq.co/".$ip));
-		if (!($details->country == "KR")){
-			$error = $error.$errortemplate1."Sorry, The Server is Korean only. You can only register at South Korea".$errortemplate2;
+		$ip_c = @file_get_contents("http://ip.zxq.co/".$ip);
+		if ($ip_c == FALSE) {
+			$error = $error.$errortemplate1."Sorry, Currently IP Services are down. Try again later.".$errortemplate2;
+		} else {
+			$details = json_decode($ip_c);
+			if (!($details->country == "KR")){
+				$error = $error.$errortemplate1."Sorry, The Server is Korean only. You can only register at South Korea".$errortemplate2;
+			}
 		}
 	}
 
