@@ -158,13 +158,13 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 			// Content
 			$mail->isHTML(false);                                  // Set email format to HTML
 			$mail->Subject = "Register Verification Mail";
-			$mail->Body    = "안녕하세요 ".$username."님, https://osu.leu.kr/의 가입을 축하드립니다.\r\n
+			$mail->Body    = "안녕하세요 ".$username."님, https://osu.leu.kr/ 의 가입을 축하드립니다.\r\n
 이제 이메일 인증만 남았군요. 아래 주소를 클릭하시면 됩니다.\r\n
 만약에 본인이 아니라면 수신 차단을 위해 ilsubyeega@naver.com으로 연락 부탁드립니다.\r\n
 \r\n
 Hello ".$username.", Congratulation for registering https://osu.leu.kr/ !\r\n
 Now we need email verification. Click the Link Down here.\r\n
-If you did not request this, please reply immediately to block this email.\r\n
+If you did not request this, please reply immediately to ilsubyeega@naver.com for block this email.\r\n
 \r\n
 URL(주소): https://keesu.leu.kr/auth/email?user=".$username."&key=".$verifykey;
 
