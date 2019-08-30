@@ -35,7 +35,7 @@ include "inc/base1.php";
                   <div class="card-header">
                     <h4>Credits (ilsubyeega/sugoidesu)</h4>
           <a href="https://github.com/ilsubyeega/sugoidesu/">Source</a> &nbsp;  &nbsp; 
-					<a href="https://github.com/ilsubyeega/sugoidesu/blob/master/LICENSE">GNU General Public License v3.0</a>
+					<a href="https://github.com/ilsubyeega/sugoidesu/blob/master/LICENSE">GNU Affero General Public License v3.0</a>
                   </div>
                   <div class="card-body">
                     <div class="list-unstyled list-unstyled-border mt-4">
