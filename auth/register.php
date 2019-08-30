@@ -1,4 +1,12 @@
 <?
+#
+#
+# SugoiDesu! (https://github.com/ilsubyeega/sugoidesu)
+# This File is Licensed as GNU Affero General Public License v3.0
+# Find out more: https://github.com/ilsubyeega/sugoidesu/blob/master/LICENSE
+#
+#
+#
 include "../inc/function.php";
 # Web Content
 include "../inc/header.php";

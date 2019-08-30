@@ -1,3 +1,13 @@
+<?
+#
+#
+# SugoiDesu! (https://github.com/ilsubyeega/sugoidesu)
+# This File is Licensed as GNU Affero General Public License v3.0
+# Find out more: https://github.com/ilsubyeega/sugoidesu/blob/master/LICENSE
+#
+#
+#
+?>
 <div class="main-content" style="min-height: 858px;">
         <section class="section">
 		<div class="hero text-white hero-bg-image" data-background="<? echo $header['background_image']; ?>" style="background-image: url(&quot;<? echo $header['background_image']; ?>&quot;);">
