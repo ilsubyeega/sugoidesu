@@ -18,7 +18,27 @@ $navbar_active[2] = "Leaderboards";
 $header['description'] = "Taiko, CTB, Mania is currently not supported for pp. Score will still be saved for future calculations.";
 $header['button']['icon'] = "fas fa-exchange-alt";
 
-
+if (isset($_GET['order'])){
+    if ($_GET['order'] == "pp"){
+        $order_by = "pp_".$mode;
+        $ordere = "pp";
+    } else if ($_GET['order'] == "acc" || $_GET['order'] == "accuracy"){
+        $order_by = "avg_accuracy_".$mode;
+        $ordere = "avg_accuracy";
+    } else if ($_GET['order'] == "score" || $_GET['order'] == "scores"){
+        $order_by = "total_score_".$mode;
+        $ordere = "total_score";
+    } else if ($_GET['order'] == "plays" || $_GET['order'] == "playcount"){
+        $order_by = "playcount_".$mode;
+        $ordere = "playcount";
+    } else {
+        $order_by = "pp_".$mode;
+        $ordere = "pp";
+    }
+} else {
+    $order_by = "pp_".$mode;
+    $ordere = "pp";
+}
 
 if ($relax==1) {
     $page['title'] = "Leaderboard (Relax)";
@@ -50,8 +70,8 @@ if (!mysqli_connect_errno())
   {
   if ($mysqli->connect_errno) {
     echo "Error : (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-	}
-$res = $mysqli->query("SELECT  `id`,  `username`,  `total_score_".$mode."`, `pp_".$mode."`, `avg_accuracy_".$mode."`, `playcount_".$mode."` FROM `".$mysql_config['db']."`.`".$table."` ORDER BY `pp_std` DESC LIMIT 100;");
+    }
+$res = $mysqli->query("SELECT  `id`,  `username`,  `total_score_".$mode."`, `pp_".$mode."`, `avg_accuracy_".$mode."`, `playcount_".$mode."` FROM `".$mysql_config['db']."`.`".$table."` ORDER BY `".$order_by."` DESC LIMIT 100;");
   } else {
 	  echo '<div class="row"><div class="col-12 col-md-12 col-sm-12"> <div class="card"> <div class="card-header"> <h4>Cannot connect to MySQL Server</h4> </div><div class="card-body"> <div class="empty-state" data-height="400" style="height: 400px;"> <div class="empty-state-icon"> <i class="fas fa-question"></i> </div><h2>'; echo "We couldn't find any data"; echo '</h2> <p class="lead">'; echo "We couldn't connect the server. Maybe Server Shutdowned? </p> </div></div></div>";
 	  exit;
@@ -104,16 +124,33 @@ function LeadActive($require, $current){
                                 <center>Username</center>
                             </th>
                             <th>
-                                <center>Performance Points</center>
+                                <center><?
+                                if ($ordere=="pp"){
+                                    echo '<a href="'.$mode.'?order=pp" class="leu-table-active">Performance Points';
+                                } else {
+                                    echo '<a href="'.$mode.'?order=pp" class="leu-table-dont-color">Performance Points';
+                                } ?></center>
                             </th>
                             <th>
-                                <center>Accuracy</center>
+                                <center><?if ($ordere=="avg_accuracy"){
+                                    echo '<a href="'.$mode.'?order=accuracy" class="leu-table-active">Accuracy';
+                                } else {
+                                    echo '<a href="'.$mode.'?order=accuracy" class="leu-table-dont-color">Accuracy';
+                                } ?></center>
                             </th>
                             <th>
-                                <center>Total Score</center>
+                                <center><?if ($ordere=="total_score"){
+                                    echo '<a href="'.$mode.'?order=score" class="leu-table-active">Total Score';
+                                } else {
+                                    echo '<a href="'.$mode.'?order=score" class="leu-table-dont-color">Total Score';
+                                } ?></center>
                             </th>
                             <th>
-                                <center>Playcount</center>
+                                <center><?if ($ordere=="playcount"){
+                                    echo '<a href="'.$mode.'?order=playcount" class="leu-table-active">Play Count';
+                                } else {
+                                    echo '<a href="'.$mode.'?order=playcount" class="leu-table-dont-color">Play Count';
+                                } ?></center>
                             </th>
                         </tr>
                         <?
