@@ -697,22 +697,22 @@ tr:first-child > td > .fc-day-grid-event {
   -webkit-user-select: none;
   outline: none;
   background-color: #fdfdff;
-  border-color: #e4e6fc; }
+  border-color: #fce4ef; }
 
 .select2-dropdown {
-  border-color: #e4e6fc !important; }
+  border-color: #fce4ef !important; }
 
 .select2-container.select2-container--open .select2-selection--multiple {
   background-color: #fefeff;
-  border-color: #95a0f4; }
+  border-color: #f495bd; }
 
 .select2-container.select2-container--focus .select2-selection--multiple, .select2-container.select2-container--focus .select2-selection--single {
   background-color: #fefeff;
-  border-color: #95a0f4; }
+  border-color: #f495bd; }
 
 .select2-container.select2-container--open .select2-selection--single {
   background-color: #fefeff;
-  border-color: #95a0f4; }
+  border-color: #f495bd; }
 
 .select2-results__option {
   padding: 10px; }
@@ -759,17 +759,17 @@ tr:first-child > td > .fc-day-grid-event {
 /* 1.19 Selectric */
 .selectric {
   background-color: #fdfdff;
-  border-color: #e4e6fc;
+  border-color: #fce4ef;
   min-height: 42px;
   border-radius: 3px;
   padding-left: 10px;
   padding-right: 10px; }
   .selectric:hover {
     background-color: #fdfdff;
-    border-color: #e4e6fc; }
+    border-color: #fce4ef; }
   .selectric:focus {
     background-color: #fefeff;
-    border-color: #95a0f4; }
+    border-color: #f495bd; }
   .selectric .label {
     font-size: 13px;
     background-color: transparent;
@@ -923,7 +923,7 @@ tr:first-child > td > .fc-day-grid-event {
   .swal-button:focus {
     box-shadow: none; }
   .swal-button.swal-button--confirm {
-    box-shadow: 0 2px 6px #acb5f6;
+    box-shadow: 0 2px 6px #f6aceb;
     background-color: #6777ef; }
     .swal-button.swal-button--confirm:focus {
       opacity: .8; }
@@ -939,7 +939,7 @@ tr:first-child > td > .fc-day-grid-event {
 /* 1.26 Tags Input */
 .bootstrap-tagsinput {
   background-color: #fdfdff;
-  border-color: #e4e6fc;
+  border-color: #fce4ef;
   display: block;
   height: 46px;
   box-shadow: none;
@@ -955,7 +955,7 @@ tr:first-child > td > .fc-day-grid-event {
       margin-left: 5px; }
   .bootstrap-tagsinput:focus {
     background-color: #fefeff;
-    border-color: #95a0f4; }
+    border-color: #f495bd; }
 
 /* 1.27 Time Picker */
 .bootstrap-timepicker-widget table td a span {
@@ -1244,7 +1244,7 @@ tr:first-child > td > .fc-day-grid-event {
         .tickets .ticket-items .ticket-item:hover .ticket-title {
           color: #6777ef; }
       .tickets .ticket-items .ticket-item.active {
-        box-shadow: 0 2px 6px #acb5f6;
+        box-shadow: 0 2px 6px #f6aceb;
         border-radius: 3px;
         background-color: #6777ef;
         border-bottom: none; }
@@ -1675,7 +1675,7 @@ tr:first-child > td > .fc-day-grid-event {
       border-radius: 50%;
       background-color: #e3eaef; }
     .wizard-steps .wizard-step.wizard-step-active {
-      box-shadow: 0 2px 6px #acb5f6;
+      box-shadow: 0 2px 6px #f6aceb;
       background-color: #6777ef;
       color: #fff; }
       .wizard-steps .wizard-step.wizard-step-active:before {
