@@ -50,6 +50,14 @@
 						<li class="nav-item <? if (isset($navbar_active[2])){ echo NavActive("DownloadSwitcher", $navbar_active[2]); } ?>">
 							<a href="/downloadswitcher" class="nav-link"><i class="far fa-snowflake"></i><span>Download Switcher</span></a>
 						</li>
+						<li class="nav-item <? if (isset($navbar_active[2])){ echo NavActive("Auth", $navbar_active[2]); } ?> dropdown">
+							<a data-toggle="dropdown" class="nav-link has-dropdown"><i class="fas fa-user"></i><span>Auth</span></a>
+							<ul class="dropdown-menu">
+							
+								<li class="nav-item <? if (isset($navbar_active[3])){ echo NavActive("Register", $navbar_active[3]); } ?>"><a href="/auth/register" class="nav-link"><i class="fas fa-user-plus"></i>&nbsp; Register</a></li>
+								
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</nav>
