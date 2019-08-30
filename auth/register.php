@@ -177,7 +177,7 @@ URL(주소): https://keesu.leu.kr/auth/email?user=".$username."&key=".$verifykey
 
 	if ($error == ""){
 		$password_crypt = password_hash(md5($password), PASSWORD_BCRYPT, ["cost" => 10]);
-		$q="INSERT INTO `sugoidesu_emailverify` (`username`, `email`, `verifycode`, `password_md5`) VALUES ('".$username."', '".$email."', '".$verifykey."', '".$password_crypt."')";
+		$q="INSERT INTO `sugoidesu_emailverify` (`username`, `email`, `verifycode`, `password_md5`, `requesttime`) VALUES ('".$username."', '".$email."', '".$verifykey."', '".$password_crypt."', '".time()."')";
 		if ($mysqli->query($q) === FALSE){
 			$error = $error.$errortemplate1."There was error while updating the profile! Registion Cancelled. (1)".$errortemplate2;
 			$rip = $mysqli->query("DELETE FROM `sugoidesu_emailverify` WHERE  `username`='".$username."' AND `email`='".$email."' AND `verifycode`='".$verifykey."' AND `password_md5`='".$password_crypt."';");
