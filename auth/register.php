@@ -85,8 +85,12 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 	if ($error == ""){
 	$mysqli = new mysqli($mysql_config['host'], $mysql_config['id'], $mysql_config['pw'], $mysql_config['db']); 
 	}
+
+	
+
+
 		// If MySQL Connection Error
-		if ($mysqli->connect_errno) {
+	if ($mysqli->connect_errno) {
 			$error = $error.$errortemplate1."Sorry, The connection to database has failed: ".$mysqli->connect_error.$errortemplate2;
 		}
 		// If Registion is Enabled
@@ -104,7 +108,16 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 				$error = $error.$errortemplate1."Sorry, Registrations are currently disabled.".$errortemplate2;
 			}
 		}
-
+		// If User has dulpicate account (ip)
+		if ($error == ""){
+			if (!$mysqli_result = $mysqli->query("SELECT * FROM `ip_user` WHERE `ip`='".$ip."';")){
+				$error = $error.$errortemplate1."Sorry, The databases just makes us error. (2".$mysqli->errno.")".$errortemplate2;
+			}
+			// If Value is set
+			if ($mysqli_result->num_rows > 0){
+				$error = $error.$errortemplate1."Wait, You are multiaccounting on same ip! If you have any questions, tell us at discord server.".$errortemplate2;
+			}
+		}
 		
 		// If Already registered (Didnt Verified Email, sugoidesu_emailverify)
 		if ($error == ""){
