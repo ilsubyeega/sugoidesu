@@ -8,8 +8,6 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 	include "inc/register1.php";
 } else if ($_SERVER['REQUEST_METHOD']=="POST"){
   if ( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['repassword']) ){
-	  # Warning - This password_pash will not COMPATIBLE with ripple (password).
-	//echo password_hash(utf8_encode($_POST['password']), PASSWORD_BCRYPT, ["cost" => 10]);
 	global $error;
 	$error = "";
 	$errortemplate1 = '<div class="alert alert-primary alert-dismissible show fade"><div class="alert-body"><button class="close" data-dismiss="alert"><span>×</span></button>';
