@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 		}
 		// If User has dulpicate account (ip)
 		if ($error == ""){
-			if (!$mysqli_result = $mysqli->query("SELECT * FROM `ip_user` WHERE `ip`='".$ip."';")){
+			if (!$mysqli_result = $mysqli->query("SELECT * FROM `ip_user` WHERE `ip`='".$_SERVER['REMOTE_ADDR']."';")){
 				$error = $error.$errortemplate1."Sorry, The databases just makes us error. (2".$mysqli->errno.")".$errortemplate2;
 			}
 			// If Value is set
