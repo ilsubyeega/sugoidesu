@@ -2,6 +2,8 @@
 include "../inc/function.php";
 # Web Content
 include "../inc/header.php";
+#MySQL
+include "../inc/sqlconfig.php";
 #Email content
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -9,6 +11,7 @@ include_once('../inc/PHPMailer/src/Exception.php');
 include_once('../inc/PHPMailer/src/PHPMailer.php');
 include_once('../inc/PHPMailer/src/SMTP.php');
 include('../inc/secure/mail.php');
+global $mysql_config;
 
 if ($_SERVER['REQUEST_METHOD']=="GET"){
 	include "inc/register1.php";
@@ -80,11 +83,11 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 
 	// MySQL Connection owo (Not now)
 	if ($error == ""){
-	$mysqli = new mysqli($mysql_config['host'], $mysql_config['id'], $mysql_config['pass'], $mysql_config['db']); 
+	$mysqli = new mysqli($mysql_config['host'], $mysql_config['id'], $mysql_config['pw'], $mysql_config['db']); 
 	}
 		// If MySQL Connection Error
 		if ($mysqli->connect_errno) {
-			$error = $error.$errortemplate1."Sorry, The connection to database has failed:".$mysqli->connect_error.$errortemplate2;
+			$error = $error.$errortemplate1."Sorry, The connection to database has failed: ".$mysqli->connect_error.$errortemplate2;
 		}
 		// If Registion is Enabled
 		if ($error == ""){
@@ -93,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 			}
 			// If Value is not set
 			if ($mysqli_result->num_rows > 0){
-				$mysqli_r = $mysqli_result->fetch_assoc;
+				$mysqli_r = $mysqli_result->fetch_assoc();
 				if (!$mysqli_r['int'] == 1){
 					$error = $error.$errortemplate1."Sorry, Registrations are currently disabled.".$errortemplate2;
 				}
@@ -139,7 +142,7 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 		try {
 			//Server settings
 			$mail->CharSet = 'utf-8';
-			$mail->SMTPDebug = 2;                                       // Enable verbose debug output
+			$mail->SMTPDebug = 0;                                       // Enable verbose debug output
 			$mail->isSMTP();                                            // Set mailer to use SMTP
 			$mail->Host       = $secure_mail['host'];  // Specify main and backup SMTP servers
 			$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
@@ -174,8 +177,8 @@ URL(주소): https://keesu.leu.kr/auth/email?user=".$username."key=".$verifykey;
 
 	if ($error == ""){
 		$password_crypt = password_hash(md5($password), PASSWORD_BCRYPT, ["cost" => 10]);
-		$q="INSERT INTO `keesu`.`sugoidesu_emailverify` (`username`, `email`, `verifycode`, `password_md5`) VALUES ('".$username."', '".$email."', '".$verifykey."', '".$password_crypt."')";
-		if ($mysqli->query($q === FALSE)){
+		$q="INSERT INTO `sugoidesu_emailverify` (`username`, `email`, `verifycode`, `password_md5`) VALUES ('".$username."', '".$email."', '".$verifykey."', '".$password_crypt."')";
+		if ($mysqli->query($q) === FALSE){
 			$error = $error.$errortemplate1."There was error while updating the profile! Registion Cancelled. (1)".$errortemplate2;
 			$rip = $mysqli->query("DELETE FROM `sugoidesu_emailverify` WHERE  `username`='".$username."' AND `email`='".$email."' AND `verifycode`='".$verifykey."' AND `password_md5`='".$password_crypt."';");
 		}
