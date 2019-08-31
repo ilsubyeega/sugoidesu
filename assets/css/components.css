@@ -1568,7 +1568,7 @@ tr:first-child > td > .fc-day-grid-event {
  */
 .avatar {
   background: #6777ef;
-  border-radius: 50%;
+  border-radius: 40%;
   color: #e3eaef;
   display: inline-block;
   font-size: 16px;
