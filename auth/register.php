@@ -174,7 +174,7 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 
 			//Recipients
 			$mail->setFrom('services@leu.kr', 'ilsubyeega (Services)');
-			$mail->addAddress('ilsubyeega@naver.com');     // Add a recipient
+			$mail->addAddress($email);     // Add a recipient
 
 			// Content
 			$mail->isHTML(false);                                  // Set email format to HTML
