@@ -7,19 +7,20 @@
 #
 #
 #
+# Import config
+include "../inc/config.php";
+include "../inc/config_secure.php";
+global $config;
 include "../inc/function.php";
 # Web Content
 include "../inc/header.php";
-#MySQL
-include "../inc/sqlconfig.php";
 #Email content
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 include_once('../inc/PHPMailer/src/Exception.php');
 include_once('../inc/PHPMailer/src/PHPMailer.php');
 include_once('../inc/PHPMailer/src/SMTP.php');
-include('../inc/secure/mail.php');
-global $mysql_config;
+
 
 if ($_SERVER['REQUEST_METHOD']=="GET"){
 	include "inc/register1.php";
@@ -91,16 +92,17 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 
 	// MySQL Connection owo (Not now)
 	if ($error == ""){
-	$mysqli = new mysqli($mysql_config['host'], $mysql_config['id'], $mysql_config['pw'], $mysql_config['db']); 
+		$mysqli = new mysqli($config['mysql']['host'], $config['mysql']['id'], $config['mysql']['pw'], $config['mysql']['db']); 
+		// If MySQL Connection Error
+		if ($mysqli->connect_errno) {
+			$error = $error.$errortemplate1."Sorry, The connection to database has failed: ".$mysqli->connect_error.$errortemplate2;
+		}
 	}
 
 	
 
 
-		// If MySQL Connection Error
-	if ($mysqli->connect_errno) {
-			$error = $error.$errortemplate1."Sorry, The connection to database has failed: ".$mysqli->connect_error.$errortemplate2;
-		}
+		
 		// If Registion is Enabled
 		if ($error == ""){
 			if (!$mysqli_result = $mysqli->query("SELECT  `type`,  `int` FROM `sugoidesu_settings` WHERE `type` = 'registrations_enabled' LIMIT 1")){
@@ -165,12 +167,12 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 			$mail->CharSet = 'utf-8';
 			$mail->SMTPDebug = 0;                                       // Enable verbose debug output
 			$mail->isSMTP();                                            // Set mailer to use SMTP
-			$mail->Host       = $secure_mail['host'];  // Specify main and backup SMTP servers
+			$mail->Host       = $config['mail']['host'];  // Specify main and backup SMTP servers
 			$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-			$mail->Username   = $secure_mail['username'];                     // SMTP username
-			$mail->Password   = $secure_mail['password'];                               // SMTP password
+			$mail->Username   = $config['mail']['username'];                     // SMTP username
+			$mail->Password   = $config['mail']['password'];                               // SMTP password
 			$mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
-			$mail->Port       = $secure_mail['port'];                                    // TCP port to connect to
+			$mail->Port       = $config['mail']['port'];                                    // TCP port to connect to
 
 			//Recipients
 			$mail->setFrom('services@leu.kr', 'ilsubyeega (Services)');
@@ -179,11 +181,11 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 			// Content
 			$mail->isHTML(false);                                  // Set email format to HTML
 			$mail->Subject = "Register Verification Mail";
-			$mail->Body    = "안녕하세요 ".$username."님, https://osu.leu.kr/ 의 가입을 축하드립니다.\r\n
+			$mail->Body    = "안녕하세요 ".$username."님, ".$config['global']['servicename']." 의 가입을 축하드립니다.\r\n
 이제 이메일 인증만 남았군요. 아래 주소를 클릭하시면 됩니다.\r\n
 만약에 본인이 아니라면 수신 차단을 위해 ilsubyeega@naver.com으로 연락 부탁드립니다.\r\n
 \r\n
-Hello ".$username.", Congratulation for registering https://osu.leu.kr/ !\r\n
+Hello ".$username.", Congratulation for registering ".$config['global']['servicename']." !\r\n
 Now we need email verification. Click the Link Down here.\r\n
 If you did not request this, please reply immediately to ilsubyeega@naver.com for block this email.\r\n
 \r\n
@@ -227,7 +229,7 @@ URL(주소): https://keesu.leu.kr/auth/email?user=".$username."&key=".$verifykey
 		// Setup Webpage
 		$page['title'] = "Done!";
 		$page['description'] = "idk why i am doing"; 
-		$navbar_active[1] = "Keesu";
+		$navbar_active[1] = $config['global']['servername'];
 		$header['background_image'] = "/assets/img/background/granat2.jpg";
 		$header['title'] = "Done!";
 		$header['description'] = "";

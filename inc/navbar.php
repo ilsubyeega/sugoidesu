@@ -18,7 +18,7 @@
 				<div>
 					<ul class="navbar-nav">
 						<a href="#" class="nav-link sidebar-gone-show" data-toggle="sidebar"><i class="fas fa-bars"></i></a>
-						<li class="nav-item active"><a href="/" class="nav-link">Keesu</a><div class="navbar-nav">
+						<li class="nav-item active"><a href="/" class="nav-link"><? echo $config['global']['servername']?></a><div class="navbar-nav">
           
         </div></li>
 					</ul>

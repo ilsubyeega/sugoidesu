@@ -9,11 +9,15 @@
 #
 include "inc/function.php";
 
+# Import config
+include "inc/config.php";
+include "inc/config_secure.php";
+global $config;
 
 # Page Settings
 $page['title'] = "Error";
 $page['description'] = "idk why i am doing"; 
-$navbar_active[1] = "Keesu";
+$navbar_active[1] = $config['global']['servername'];
 $navbar_active[2] = "Error";
 #$navbar_active[3] = "";
 
@@ -27,6 +31,7 @@ $header['description'] = "";
 include "inc/header.php";
 include "inc/navbar.php";
 include "inc/base1.php";
+
 
 
 ?>

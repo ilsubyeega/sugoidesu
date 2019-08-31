@@ -9,11 +9,15 @@
 #
 include "inc/function.php";
 
-# Page Settings
+# Import config
+include "inc/config.php";
+include "inc/config_secure.php";
+global $config;
 
+# Page Settings
 $page['title'] = "Licenses";
 $page['description'] = "idk why i am doing"; 
-$navbar_active[1] = "Keesu";
+$navbar_active[1] = $config['global']['servername'];
 $navbar_active[2] = "Info";
 $navbar_active[3] = "Licenses";
 

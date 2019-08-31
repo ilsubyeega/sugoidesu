@@ -9,11 +9,15 @@
 #
 include "../inc/function.php";
 
+# Import config
+include "../inc/config.php";
+include "../inc/config_secure.php";
+global $config;
 
 # Page Settings
 $page['title'] = "Email Verification";
 $page['description'] = "Email Verification"; 
-$navbar_active[1] = "Keesu";
+$navbar_active[1] = $config['global']['servername'];
 
 # Header Settings (If is not sets, it won't be shown)
 $header['background_image'] = "/assets/img/background/Lune.jpg";
@@ -26,8 +30,7 @@ include "../inc/header.php";
 include "../inc/navbar.php";
 include "../inc/base1.php";
 
-#MySQL
-include "../inc/sqlconfig.php";
+
 
 
 $success = 2; // Make it if is doing thing
@@ -67,7 +70,7 @@ if ($success==2){
 
 // MySQL Connection owo (Not now)
 if ($success==2){
-	$mysqli = new mysqli($mysql_config['host'], $mysql_config['id'], $mysql_config['pw'], $mysql_config['db']); 
+	$mysqli = new mysqli($config['mysql']['host'], $config['mysql']['id'], $config['mysql']['pw'], $config['mysql']['db']); 
 	}
 	// If MySQL Connection Error
 	if ($mysqli->connect_errno) {
@@ -78,7 +81,7 @@ if ($success==2){
 // Checking the key is valid
 
 if ($success==2){
-	if (!$mysqli_result = $mysqli->query("SELECT * FROM `keesu`.`sugoidesu_emailverify` WHERE `username`='".$_GET["user"]."' AND `verifycode`='".$_GET["key"]."' LIMIT 1;")){
+	if (!$mysqli_result = $mysqli->query("SELECT * FROM `sugoidesu_emailverify` WHERE `username`='".$_GET["user"]."' AND `verifycode`='".$_GET["key"]."' LIMIT 1;")){
 		$success = 0;
 		$reason = "Server Side Error (2)";
 	}

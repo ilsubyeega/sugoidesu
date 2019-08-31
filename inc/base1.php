@@ -21,13 +21,17 @@
                     if (isset($header['description'])){
                       echo $header['description'];
                     }
-                    if ($relax==0 && $mode=="mania"){
-                      echo '<div class="mt-4"><div class="btn btn-lg leu-transparent">There is no relax on osu!mania :(</div></div>';
-                    } else if (isset($header['button']['text']) && isset($header['button']['icon']) && isset($header['button']['url'])){
-                       echo '<div class="mt-4"><a href="'.$header['button']['url'].
-                       '" class="btn btn-outline-white btn-lg btn-icon icon-left"><i class="'.$header['button']['icon'].
-                       '"></i>&nbsp; '.$header['button']['text'].'</a></div>';
-                    }
+					
+					//Leaderboard (leaderbaord normal-mania)
+					if (isset($relax) && isset($relax)){
+						if ($relax==0 && $mode=="mania"){
+						  echo '<div class="mt-4"><div class="btn btn-lg leu-transparent">There is no relax on osu!mania :(</div></div>';
+						} else if (isset($header['button']['text']) && isset($header['button']['icon']) && isset($header['button']['url'])){
+						   echo '<div class="mt-4"><a href="'.$header['button']['url'].
+						   '" class="btn btn-outline-white btn-lg btn-icon icon-left"><i class="'.$header['button']['icon'].
+						   '"></i>&nbsp; '.$header['button']['text'].'</a></div>';
+						}
+					}
                     ?>
                     
                   </div>

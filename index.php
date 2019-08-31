@@ -10,10 +10,15 @@
 include "inc/function.php";
 
 
+# Import config
+include "inc/config.php";
+include "inc/config_secure.php";
+global $config;
+
 # Page Settings
 $page['title'] = "Home";
 $page['description'] = "idk why i am doing"; 
-$navbar_active[1] = "Keesu";
+$navbar_active[1] = $config['global']['servername'];
 $navbar_active[2] = "Home";
 #$navbar_active[3] = "";
 
@@ -24,8 +29,6 @@ $header['description'] = "";
 #$header['button']['text'] = "Change to Relax";
 #$header['button']['icon'] = "fas fa-exchange-alt";
 #$header['button']['url'] = "/leaderboards/relax";
-
-
 
 
 # Web Content

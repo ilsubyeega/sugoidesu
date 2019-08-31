@@ -67,7 +67,7 @@
               </div>
 
               <div class="form-group text-right">
-                <a href="auth-forgot-password.html" class="float-left mt-3">
+                <a href="/auth/login" class="float-left mt-3">
                   Already have account?
                 </a>
                 <a href="/" class="btn btn-icon btn-danger btn-lg"><i class="fas fa-home"></i></a> &nbsp; 
@@ -93,7 +93,8 @@
                 <h1 class="mb-2 display-4 font-weight-bold">환영합니다</h1>
                 <h5 class="font-weight-normal text-muted-transparent">Keesu</h5>
               </div>
-              Video by <a class="text-light bb" target="_blank" href="https://www.youtube.com/channel/UCqBMUERNdNyjM_KMZsLCabA">2ke</a> on <a class="text-light bb" target="_blank" href="https://www.youtube.com/channel/UCqBMUERNdNyjM_KMZsLCabA">Youtube</a>
+              Video by <a class="text-light bb" target="_blank" href="<?php echo $config['page']['register']['by_url'];?>"><?php echo $config['page']['register']['by'];?></a>
+               on <a class="text-light bb" target="_blank" href="<?php echo $config['page']['register']['by_service_url'];?>"><?php echo $config['page']['register']['by_service'];?></a>
             </div>
           </div>
         </div>

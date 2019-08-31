@@ -9,11 +9,15 @@
 #
 include "inc/function.php";
 
+# Import config
+include "inc/config.php";
+include "inc/config_secure.php";
+global $config;
 
 # Page Settings
 $page['title'] = "Download Switcher";
 $page['description'] = "idk why i am doing"; 
-$navbar_active[1] = "Keesu";
+$navbar_active[1] = $config['global']['servername'];
 $navbar_active[2] = "DownloadSwitcher";
 #$navbar_active[3] = "";
 
@@ -32,8 +36,6 @@ $header['description'] = "You can download server switchers here.";
 include "inc/header.php";
 include "inc/navbar.php";
 include "inc/base1.php";
-
-#echo "SELECT  `id`,  `username`,  `total_score_std`, `pp_std`, `avg_accuracy_std`, `playcount_std` FROM `".$mysql_config['db']."`.`users_stats` ORDER BY `pp_std` DESC LIMIT 100;";
 ?>
 <div class="card">
               <div class="card-header">

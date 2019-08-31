@@ -8,7 +8,10 @@
 #
 #
 include "../../inc/function.php";
-include "../../inc/sqlconfig.php";
+# Import config
+include "../../inc/config.php";
+include "../../inc/config_secure.php";
+global $config;
 
 
 global $mode, $relax;
@@ -16,7 +19,7 @@ global $mode, $relax;
 # Page Settings
 
 $page['description'] = "idk why i am doing"; 
-$navbar_active[1] = "Keesu";
+$navbar_active[1] = $config['global']['servername'];
 $navbar_active[2] = "Leaderboards";
 
 
@@ -73,10 +76,10 @@ include "../../inc/header.php";
 include "../../inc/navbar.php";
 include "../../inc/base1.php";
 
-$mysqli = new mysqli($mysql_config['host'], $mysql_config['id'], $mysql_config['pw'], $mysql_config['db']);
+$mysqli = new mysqli($config['mysql']['host'], $config['mysql']['id'], $config['mysql']['pw'], $config['mysql']['db']);
 if (!mysqli_connect_errno())
   {
-    $res = $mysqli->query("SELECT  `id`,  `username`,  `total_score_".$mode."`, `pp_".$mode."`, `avg_accuracy_".$mode."`, `playcount_".$mode."` FROM `".$mysql_config['db']."`.`".$table."` ORDER BY `".$order_by."` DESC LIMIT 100;");
+    $res = $mysqli->query("SELECT  `id`,  `username`,  `total_score_".$mode."`, `pp_".$mode."`, `avg_accuracy_".$mode."`, `playcount_".$mode."` FROM `".$config['mysql']['db']."`.`".$table."` ORDER BY `".$order_by."` DESC LIMIT 100;");
   } else {
 	  echo '<div class="row"><div class="col-12 col-md-12 col-sm-12"> <div class="card"> <div class="card-header"> <h4>Cannot connect to MySQL Server</h4> </div><div class="card-body"> <div class="empty-state" data-height="400" style="height: 400px;"> <div class="empty-state-icon"> <i class="fas fa-question"></i> </div><h2>'; echo "We couldn't find any data"; echo '</h2> <p class="lead">'; echo "We couldn't connect the server. Maybe Server Shutdowned? </p> </div></div></div>";
 	  exit;
@@ -89,7 +92,7 @@ function LeadActive($require, $current){
 							return "";
 						}
 					}
-#echo "SELECT  `id`,  `username`,  `total_score_std`, `pp_std`, `avg_accuracy_std`, `playcount_std` FROM `".$mysql_config['db']."`.`users_stats` ORDER BY `pp_std` DESC LIMIT 100;";
+#echo "SELECT  `id`,  `username`,  `total_score_std`, `pp_std`, `avg_accuracy_std`, `playcount_std` FROM `".$config['mysql']['db']."`.`users_stats` ORDER BY `pp_std` DESC LIMIT 100;";
 ?>
 <div class="row">
 
