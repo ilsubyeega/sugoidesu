@@ -11,16 +11,16 @@ include "../inc/function.php";
 
 
 # Page Settings
-$page['title'] = "No Content";
-$page['description'] = "idk why i am doing"; 
+$page['title'] = "Keesu / Docs";
+$page['description'] = "W..Why watching me?"; 
 $navbar_active[1] = "Keesu";
 $navbar_active[2] = "Documents";
 #$navbar_active[3] = "";
 
 # Header Settings (If is not sets, it won't be shown)
 $header['background_image'] = "/assets/img/background/granat1.jpg";
-$header['title'] = "Not Found";
-$header['description'] = "";
+$header['title'] = "Docs";
+$header['description'] = "You can find any way/soulations on docs.";
 #$header['button']['text'] = "Change to Relax";
 #$header['button']['icon'] = "fas fa-exchange-alt";
 #$header['button']['url'] = "/leaderboards/relax";
@@ -36,15 +36,16 @@ include "../inc/base1.php";
 
 #echo "SELECT  `id`,  `username`,  `total_score_std`, `pp_std`, `avg_accuracy_std`, `playcount_std` FROM `".$mysql_config['db']."`.`users_stats` ORDER BY `pp_std` DESC LIMIT 100;";
 ?>
+<a href="How.php">
 <div class="card">
               <div class="card-header">
-                <h4>No Content</h4>
+                <h4>How to install?</h4>
               </div>
-              <div class="card-body">
-                <p>There is no written document here.</p>
+              <div class="card-footer bg-whitesmoke">
+                Created by <a href="https://keepsobp.github.io">KeepSOBP</a>
               </div>
             </div>
-
+</a>
 <?
 include "../inc/footer.php";
 ?>
