@@ -41,6 +41,10 @@ include "../inc/base1.php";
               <div class="card-header">
                 <h4>How to install?</h4>
               </div>
+              <div class="card-body">
+                <p>Do you want play Keesu? but you can't connect???</p>
+                <div class="section-title">JUST CLICK  IT!</div>
+                </div>
               <div class="card-footer bg-whitesmoke">
                 Created by <a href="https://keepsobp.github.io">KeepSOBP</a>
               </div>
