@@ -50,7 +50,7 @@
 							<a data-toggle="dropdown" class="nav-link has-dropdown"><i class="far fa-copy"></i><span>Info</span></a>
 							<ul class="dropdown-menu">
 							
-								<li class="nav-item <? if (isset($navbar_active[3])){ echo NavActive("IJoinDiscord", $navbar_active[3]); } ?>"><a href="https://discord.gg/aC2G7dm" class="nav-link"><i class="far fa-comment-alt"></i>&nbsp; Join Discord</a></li>
+								<li class="nav-item <? if (isset($navbar_active[3])){ echo NavActive("IJoinDiscord", $navbar_active[3]); } ?>"><a href="https://discord.gg/PnDh2ff" class="nav-link"><i class="far fa-comment-alt"></i>&nbsp; Join Discord</a></li>
 								
 								<li class="nav-item <? if (isset($navbar_active[3])){ echo NavActive("Docs", $navbar_active[3]); } ?>"><a href="/docs" class="nav-link">Documentation</a></li>
 								<li class="nav-item <<? if (isset($navbar_active[3])){ echo NavActive("Licenses", $navbar_active[3]); } ?>"><a href="/licenses" class="nav-link">LICENSES</a></li>
