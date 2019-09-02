@@ -120,7 +120,7 @@ if ($success==2){
 }
 if ($success==2){
 	$ttt = $mysqli_r['username'];
-	$q="INSERT INTO `users` (`username`, `username_safe`, `password_md5`, `email`, `register_datetime`, `password_version`, `privileges`) VALUES ('".$mysqli_r['username']."', '".strtolower($ttt)."', '".$mysqli_r['password_md5']."', '".$mysqli_r['email']."', '".time()."', '10', 'idk')";
+	$q="INSERT INTO `users` (`username`, `username_safe`, `password_md5`, `email`, `register_datetime`, `password_version`, `privileges`) VALUES ('".$mysqli_r['username']."', '".strtolower($ttt)."', '".$mysqli_r['password_md5']."', '".$mysqli_r['email']."', '".time()."', '10', 3)";
 	
 	if ($mysqli->query($q) === FALSE){
 		$success = 0;
