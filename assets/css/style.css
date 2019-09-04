@@ -2973,3 +2973,29 @@ a:hover {
 	border-color: #ff00e3 !important;
 	background-color: #ff00e3 !important;
 }
+
+.leu-tootip-able {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.leu-tootip-able .leu-tootip-info {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  padding: 5px 20px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.leu-tootip-able:hover .leu-tootip-info {
+  visibility: visible;
+  text-align:center;
+  opacity: 1;
+}
