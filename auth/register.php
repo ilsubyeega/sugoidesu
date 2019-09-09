@@ -49,7 +49,6 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 	if (!(filter_var($email, FILTER_VALIDATE_EMAIL))){
 		$error = $error.$errortemplate1.$email." is not a valid email address!".$errortemplate2;
 	}
-
 	if (!(strpos($email, "naver.com"))){
 		$error = $error.$errortemplate1."We are currently whitelisted Naver Mail only.".$errortemplate2;
 	}
@@ -58,9 +57,7 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 	if (strlen($_POST["password"]) <= '8') {
         $error = $error.$errortemplate1."Your Password Must Contain At Least 8 Characters!".$errortemplate2;
     }
-    if(!preg_match("#[0-9]+#",$_POST["password"])) {
-        $error = $error.$errortemplate1."Your Password Must Contain At Least 1 Number!".$errortemplate2;
-    }
+
     if(!preg_match("#[a-z]+#",$_POST["password"])) {
         $error = $error.$errortemplate1."Your Password Must Contain At Least 1 Lowercase Letter!".$errortemplate2;
 	}
