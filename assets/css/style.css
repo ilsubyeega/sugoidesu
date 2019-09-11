@@ -2970,8 +2970,8 @@ a:hover {
 	border: #ffa1f5 solid 1px;
 }
 .custom-control-input:checked~.custom-control-label::before{
-	border-color: #ff00e3 !important;
-	background-color: #ff00e3 !important;
+	border-color: #ef67b1 !important;
+	background-color: #ef67b1 !important;
 }
 
 .leu-tootip-able {
@@ -2998,4 +2998,14 @@ a:hover {
   visibility: visible;
   text-align:center;
   opacity: 1;
+}
+
+.rounded-rectangle {
+  border-radius: 40% !important
+}
+
+.leu-inline {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 1rem;
 }
