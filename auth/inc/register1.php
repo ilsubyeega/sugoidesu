@@ -27,6 +27,9 @@
             <div class="form-group">
                 <label for="name">Username</label>
                 <input id="name" type="name" class="form-control" name="name" tabindex="1" required autofocus>
+                <small id="namehelp" class="form-text text-muted">
+                  Your name must be 1-15 characters long, contain letters and numbers, and must not contain special characters, or emoji.
+                </small>
                 <div class="invalid-feedback">
                   Please fill in your username
                 </div>
@@ -34,6 +37,9 @@
               <div class="form-group">
                 <label for="email">Email</label>
                 <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
+                <small id="namehelp" class="form-text text-muted">
+                  Keesu requires Naver Mail to register.
+                </small>
                 <div class="invalid-feedback">
                   Please fill in your email
                 </div>
