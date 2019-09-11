@@ -3001,11 +3001,15 @@ a:hover {
 }
 
 .rounded-rectangle {
-  border-radius: 40% !important
+  border-radius: 40% !important;
 }
 
 .leu-inline {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-right: 1rem;
+}
+
+.leu-disableshadow {
+  box-shadow: none !important;
 }
