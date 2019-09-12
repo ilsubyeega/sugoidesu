@@ -73,8 +73,8 @@ include "inc/navbar.php";
                                 <span class="badge badge-info">Developer</span>
                                 <span class="badge badge-light">Bad Game Player</span>
                             </div><br>
-                            Signed up at  <a data-toggle="tooltip" title="" data-original-title="2019/9/8 20:21 AM">4 days ago</a><br>
-                            Last seen  <a data-toggle="tooltip" title="" data-original-title="2019/9/8 20:21 AM">4 days ago</a>
+                            Signed up at  <a data-toggle="tooltip" data-original-title="2019/9/8 20:21 AM">4 days ago</a><br>
+                            Last seen  <a data-toggle="tooltip" data-original-title="2019/9/8 20:21 AM">4 days ago</a>
                         </div>
                     </div>
                     <br>
@@ -148,17 +148,18 @@ include "inc/navbar.php";
                                     <td class="p-0 text-center">
                                         SS
                                     </td>
-                                    <td><a href "#">yay i'm seunglabfx [yay you are being chicken]</a></td>
+                                    <td><a href="#" data-toggle="tooltip"
+                                                    data-placement="top" data-html="true" data-original-title="Mapped by ilsubyeega <br> 5.61★">yay i'm seunglabfx [yay you are being chicken]</a></td>
                                     <td>1,100,100,100</td>
                                     <td>
                                         <center>
-                                            <a data-toggle="tooltip" title="" data-original-title="2019/9/8 20:21 AM">2
+                                            <a data-toggle="tooltip" data-original-title="2019/9/8 20:21 AM">2
                                                 days ago</a>
                                         </center>
                                     </td>
                                     <td>
                                         <center>
-                                        <a data-toggle="tooltip" title="" data-original-title="100pp (100pp, 100%)">100pp</a>
+                                        <a data-toggle="tooltip" data-original-title="100pp (100pp, 100%)">100pp</a>
                                         </center>
                                     </td>
                                     <td>
@@ -168,7 +169,7 @@ include "inc/navbar.php";
                                     </td>
                                     <td>
                                         <center><button type="button" class="btn btn-primary" data-toggle="tooltip"
-                                                data-placement="top" title="" data-original-title="Download Replay">
+                                                data-placement="top" data-original-title="Download Replay">
                                                 <i class="fas fa-star"></i>
                                             </button></center>
                                     </td>
@@ -219,7 +220,8 @@ include "inc/navbar.php";
                                         <td class="p-0 text-center">
                                             SS
                                         </td>
-                                        <td><a href "#">yay i'm seunglabfx [yay you are being chicken]</a></td>
+                                        <td><a href="#" data-toggle="tooltip"
+                                                    data-placement="top" data-html="true" data-original-title="Mapped by ilsubyeega <br> 5.61★">yay i'm seunglabfx [yay you are being chicken]</a></td>
                                         <td>1,100,100,100</td>
                                         <td>
                                             <center>
@@ -241,12 +243,12 @@ include "inc/navbar.php";
                                         <td>
                                             <center>
                                                 <div class="badge badge-success" data-toggle="tooltip"
-                                                    data-placement="top" title="" data-original-title="Completed"><i class="fas fa-check"></i></div>
+                                                    data-placement="top" data-original-title="Completed"><i class="fas fa-check"></i></div>
                                             </center>
                                         </td>
                                         <td>
                                             <center><button type="button" class="btn btn-primary" data-toggle="tooltip"
-                                                    data-placement="top" title="" data-original-title="Download Replay">
+                                                    data-placement="top" data-original-title="Download Replay">
                                                     <i class="fas fa-star"></i>
                                                 </button></center>
                                         </td>
