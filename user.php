@@ -73,10 +73,11 @@ include "inc/navbar.php";
                                 <span class="badge badge-info">Developer</span>
                                 <span class="badge badge-light">Bad Game Player</span>
                             </div><br>
-                            Test<br><br>
-                            
+                            Signed up at  <a data-toggle="tooltip" title="" data-original-title="2019/9/8 20:21 AM">4 days ago</a><br>
+                            Last seen  <a data-toggle="tooltip" title="" data-original-title="2019/9/8 20:21 AM">4 days ago</a>
                         </div>
                     </div>
+                    <br>
                     <div class="col-lg-4">
                         
                     <div class="table-responsive">
