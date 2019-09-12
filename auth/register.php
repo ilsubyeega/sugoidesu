@@ -42,7 +42,10 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 	}
 	// Checking Username is longer than 3 letters
 	if (strlen($_POST["name"]) < '3') {
-        $error = $error.$errortemplate1."Your Username Must Contain At Least 3 Characters!".$errortemplate2;
+        $error = $error.$errortemplate1."Your Username Length must higher 3 Characters!".$errortemplate2;
+	}
+	if (strlen($_POST["name"]) > '15') {
+        $error = $error.$errortemplate1."Your Username Length must lower than 15 Characters!".$errortemplate2;
     }
 	// Email WhiteListing
 	$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); // Filter all illegal strings
