@@ -30,8 +30,12 @@ include "inc/navbar.php";
 ?>
 
 <div class="main-content" style="min-height: 858px;">
-<div class="dropdown d-inline mr-2">
-                    <button class="btn btn-primary leu-disableshadow">Add Friend</button> &nbsp; 
+    <!-- First -->
+    <section class="section">
+        <div class="hero text-white hero-bg-image" data-background="/assets/img/background/lune.jpg"
+            style="background-image: url(&quot;/assets/img/background/lune.jpg&quot;);">
+            <div class="hero-inner">
+                <h2>User Information</h2><br><div class="dropdown d-inline mr-2">
                       <button class="btn btn-primary dropdown-toggle leu-disableshadow" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Modes
                       </button>
@@ -44,14 +48,7 @@ include "inc/navbar.php";
                         <a class="dropdown-item" href="#">Taiko (Relax)</a>
                         <a class="dropdown-item" href="#">Catch The Beat (Relax)</a>
                       </div>
-                    </div>
-                <br><br>
-    <!-- First -->
-    <section class="section">
-        <div class="hero text-white hero-bg-image" data-background="/assets/img/background/lune.jpg"
-            style="background-image: url(&quot;/assets/img/background/lune.jpg&quot;);">
-            <div class="hero-inner">
-                <h2>User Information</h2>
+                    </div> 
             </div>
         </div>
 
@@ -70,8 +67,10 @@ include "inc/navbar.php";
                                 <h5>ilsubyeega </h5>
                             </div>
                             <div class="author-box-job">
-                                <span class="badge badge-info">Developer</span>
-                                <span class="badge badge-light">Bad Game Player</span>
+                                <span class="badge badge-info" 
+                                data-toggle="tooltip"  data-html="true" data-original-title="This user is developing the keesu.<br>He is actually tryharding.">Developer</span>
+                                <span class="badge badge-light" 
+                                data-toggle="tooltip"  data-html="true" data-original-title="This user is bad at game lol">Bad Game Player</span>
                             </div><br>
                             Signed up at  <a data-toggle="tooltip" data-original-title="2019/9/8 20:21 AM">4 days ago</a><br>
                             Last seen  <a data-toggle="tooltip" data-original-title="2019/9/8 20:21 AM">4 days ago</a>
@@ -113,6 +112,7 @@ include "inc/navbar.php";
 
             </div>
 </div>
+
             <div class="card">
                 <div class="card-header">
                     <h4>Best Scores</h4>
@@ -149,8 +149,8 @@ include "inc/navbar.php";
                                         SS
                                     </td>
                                     <td><a href="#" data-toggle="tooltip"
-                                                    data-placement="top" data-html="true" data-original-title="Mapped by ilsubyeega <br> 5.61★">yay i'm seunglabfx [yay you are being chicken]</a></td>
-                                    <td>1,100,100,100</td>
+                                                    data-html="true" data-original-title="Mapped by ilsubyeega <br> 5.61★">yay i'm seunglabfx [yay you are being chicken]</a></td>
+                                    <td><a data-toggle="tooltip" data-original-title="1307x">1,100,100,100</a></td>
                                     <td>
                                         <center>
                                             <a data-toggle="tooltip" data-original-title="2019/9/8 20:21 AM">2
@@ -164,12 +164,20 @@ include "inc/navbar.php";
                                     </td>
                                     <td>
                                         <center>
-                                            100%
+                                        <a data-toggle="tooltip" data-placement="left" 
+                                                    data-html="true" data-original-title="
+                                                    300: 1 <br>
+                                                    Gekis: 1<br>
+                                                    100: 1<br>
+                                                    Katus: 1<br>
+                                                    50: 1<br>
+                                                    Misses: 1
+                                                    ">100%</a>
                                         </center>
                                     </td>
                                     <td>
                                         <center><button type="button" class="btn btn-primary" data-toggle="tooltip"
-                                                data-placement="top" data-original-title="Download Replay">
+                                                data-original-title="Download Replay">
                                                 <i class="fas fa-star"></i>
                                             </button></center>
                                     </td>
@@ -221,8 +229,8 @@ include "inc/navbar.php";
                                             SS
                                         </td>
                                         <td><a href="#" data-toggle="tooltip"
-                                                    data-placement="top" data-html="true" data-original-title="Mapped by ilsubyeega <br> 5.61★">yay i'm seunglabfx [yay you are being chicken]</a></td>
-                                        <td>1,100,100,100</td>
+                                                    data-html="true" data-original-title="Mapped by ilsubyeega <br> 5.61★">yay i'm seunglabfx [yay you are being chicken]</a></td>
+                                        <td><a data-toggle="tooltip" data-original-title="1307x">1,100,100,100</a></td>
                                         <td>
                                             <center>
                                                 <a data-toggle="tooltip" title=""
@@ -236,19 +244,27 @@ include "inc/navbar.php";
                                         </td>
                                         <td>
                                             <center>
-                                                100%
+                                            <a data-toggle="tooltip" data-placement="left" 
+                                                    data-html="true" data-original-title="
+                                                    300: 1 <br>
+                                                    Gekis: 1<br>
+                                                    100: 1<br>
+                                                    Katus: 1<br>
+                                                    50: 1<br>
+                                                    Misses: 1
+                                                    ">100%</a>
                                             </center>
                                         </td>
 
                                         <td>
                                             <center>
                                                 <div class="badge badge-success" data-toggle="tooltip"
-                                                    data-placement="top" data-original-title="Completed"><i class="fas fa-check"></i></div>
+                                                    data-original-title="Completed"><i class="fas fa-check"></i></div>
                                             </center>
                                         </td>
                                         <td>
                                             <center><button type="button" class="btn btn-primary" data-toggle="tooltip"
-                                                    data-placement="top" data-original-title="Download Replay">
+                                                    data-original-title="Download Replay">
                                                     <i class="fas fa-star"></i>
                                                 </button></center>
                                         </td>
