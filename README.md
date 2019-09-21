@@ -18,8 +18,8 @@ https://keesu.leu.kr/
 - HTML/CSS/JS
 
 # Screenshot
-![1](https://imgur.com/a/u8qD0WN)
-![2](https://imgur.com/a/6psybUq)
+![1](https://i.imgur.com/tfLHWZc.png)
+![2](https://i.imgur.com/XqVm8Y0.png)
 
 
 
