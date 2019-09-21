@@ -3,7 +3,7 @@ The WIP Project. Frontend, Admin Panel that compatible with ruri.
 This Project was for Keesu, But You can modify the files..
 
 # This Project uses another Project.
-[ilsubyeega/stisla (stisla/stisla)](https://github.com/ilsubyeega/stisla) MIT
+[ilsubyeega/stisla (stisla/stisla)](https://github.com/ilsubyeega/stisla) **MIT**
 
 
 # Releated Project
