@@ -1,3 +1,5 @@
+I will continue project when i finished [api](https://github.com/ilsubyeega/isabel), just if you want to know.
+
 # sugoidesu
 The WIP Project. Frontend, Admin Panel that compatible with ruri.
 This Project was for Keesu, But You can modify the files..
