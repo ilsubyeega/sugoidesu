@@ -188,10 +188,18 @@ if ($success==2){
 		$rip = $mysqli->query("DELETE FROM `rx_stats` WHERE  `username`='".$mysqli_r['username']."' AND `id`='".$mysqli_e['id']."';");
 		$rip = $mysqli->query("ALTER TABLE `users` AUTO_INCREMENT=".$mysqli_e['id']-1);
 	} else {
+		$success=2;
+	}
+}
+// Some useless bug
+if ($success==2){
+	$q="DELETE FROM `sugoidesu_emailverify` WHERE  (`username`='".$mysqli_r['username']."' AND `email`='".$mysqli_r['email']."') AND NOT `verifycode`='".$mysqli_r['verifycode']."'";
+	if ($mysqli->query($q) === FALSE){
+		
+	} else {
 		$success=1;
 	}
 }
-
 if ($success==1){
 echo '<div class="col-12 mb-4">
 		<div class="hero align-items-center bg-success text-white">
