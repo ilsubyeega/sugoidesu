@@ -10,7 +10,7 @@
 ?>
 <div class="main-content" style="min-height: 858px;">
         <section class="section">
-		<div class="hero text-white hero-bg-image" data-background="<? echo $header['background_image']; ?>" style="background-image: url(&quot;<? echo $header['background_image']; ?>&quot;);">
+		<div class="hero text-white hero-bg-image leu-herocustom1" data-background="<? echo $header['background_image']; ?>" style="background-image: url(&quot;<? echo $header['background_image']; ?>&quot;);">
                   <div class="hero-inner">
                     <?
                     global $mode, $relax;
@@ -36,7 +36,7 @@
                     
                   </div>
                 </div>
-          <div class="section-header">
+          <div class="section-header leu-herocustom2">
             <?
             if (isset($header['footerdesc'])){
               echo '<div class="breadcrumb-item active">'.$header['footerdesc'].'</div>';

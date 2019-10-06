@@ -32,7 +32,7 @@ include "inc/navbar.php";
 <div class="main-content" style="min-height: 858px;">
     <!-- First -->
     <section class="section">
-        <div class="hero text-white hero-bg-image" data-background="/assets/img/background/lune.jpg"
+        <div class="hero text-white hero-bg-image leu-herocustom1" data-background="/assets/img/background/lune.jpg"
             style="background-image: url(&quot;/assets/img/background/lune.jpg&quot;);">
             <div class="hero-inner">
                 <h2>User Information</h2><br><div class="dropdown d-inline mr-2">
@@ -52,7 +52,7 @@ include "inc/navbar.php";
             </div>
         </div>
 
-        <div class="card author-box card-primary">
+        <div class="card author-box card-primary leu-herocustom2">
             <div class="card-body">
                 <div class="row">
                     <div class="col-lg-8">

@@ -3031,3 +3031,18 @@ a:hover {
 .leu-comfortaa {
   font-family: 'Comfortaa', cursive;
 }
+
+.leu-herocustom1 {
+  border-radius: 3px 3px 0 0 !important;
+}
+.leu-herocustom1::before {
+  border-radius: 3px 3px 0 0 !important;
+}
+
+.leu-herocustom2 {
+  border-radius: 0 0 3px 3px !important;
+}
+
+.leu-herocustom2::before {
+  border-radius: 0 0 3px 3px !important;
+}
