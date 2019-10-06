@@ -258,13 +258,6 @@ $(function() {
         main_sidebar.find('.navbar-nav').addClass('sidebar-menu').removeClass('navbar-nav');
         main_sidebar.find('.sidebar-menu .nav-item.dropdown.show a').click();
         main_sidebar.find('.sidebar-brand').remove();
-        main_sidebar.find('.sidebar-menu').before($('<div>', {
-          class: 'sidebar-brand'
-        }).append(
-          $('<a>', {
-            href: $('.navbar-brand').attr('href'),
-          }).html($('.navbar-brand').html())
-        ));
         setTimeout(function() {
           sidebar_nicescroll = main_sidebar.niceScroll(sidebar_nicescroll_opts);
           sidebar_nicescroll = main_sidebar.getNiceScroll();
