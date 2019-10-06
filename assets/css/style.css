@@ -3046,3 +3046,6 @@ a:hover {
 .leu-herocustom2::before {
   border-radius: 0 0 3px 3px !important;
 }
+.leu-navright {
+  left: -120px !important;
+}
