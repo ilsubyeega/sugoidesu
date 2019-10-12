@@ -1,4 +1,4 @@
-<?
+<?php
 #
 #
 # SugoiDesu! (https://github.com/ilsubyeega/sugoidesu)
@@ -17,8 +17,7 @@
             <img src="/assets/icon/favicon-96x96.png" alt="Keesu logo" width="60" class="mb-5 mt-2">
             <h4 class="text-dark font-weight-normal">Welcome to <span class="font-weight-bold">Keesu</span> :D</h4>
             <p class="text-muted">Before you get started, you must login or register if you don't already have an account.</p>
-            <?
-            global $error;
+            <?php            global $error;
             if (!($error == "")){
                 echo $error;
             }

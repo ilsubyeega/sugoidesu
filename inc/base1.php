@@ -1,4 +1,4 @@
-<?
+<?php
 #
 #
 # SugoiDesu! (https://github.com/ilsubyeega/sugoidesu)
@@ -12,8 +12,7 @@
         <section class="section">
 		<div class="hero text-white hero-bg-image leu-herocustom1" data-background="<? echo $header['background_image']; ?>" style="background-image: url(&quot;<? echo $header['background_image']; ?>&quot;);">
                   <div class="hero-inner">
-                    <?
-                    global $mode, $relax;
+                    <?php                    global $mode, $relax;
                     if (isset($header['title'])){
                       echo '<h2>'.$header['title'].'</h2>';
                     }
@@ -37,8 +36,7 @@
                   </div>
                 </div>
           <div class="section-header leu-herocustom2">
-            <?
-            if (isset($header['footerdesc'])){
+            <?php            if (isset($header['footerdesc'])){
               echo '<div class="breadcrumb-item active">'.$header['footerdesc'].'</div>';
             }
             ?>    

@@ -8,8 +8,7 @@
   Made with 💙 by Stisla and ilsubyeega
 -->
 <head>
-  <?
-  if (isset($page['title'])){
+  <?php  if (isset($page['title'])){
     echo '<title> '.$navbar_active[1].' › '.$page['title'].'</title>';
   }
 

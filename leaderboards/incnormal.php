@@ -1,4 +1,4 @@
-<?
+<?php
 #
 #
 # SugoiDesu! (https://github.com/ilsubyeega/sugoidesu)
@@ -102,8 +102,7 @@ function LeadActive($require, $current){
             <div class="container">
                 <br>
                 <ul class="nav nav-pills">
-				<?
-					
+				<?php					
 					
 					
 					if ($relax==0) {
@@ -132,8 +131,7 @@ function LeadActive($require, $current){
                                 <center>Username</center>
                             </th>
                             <th>
-                                <center><?
-                                if ($ordere=="pp"){
+                                <center><?php                                if ($ordere=="pp"){
                                     echo '<a href="'.$mode.'?order=pp" class="leu-table-active">Performance Points';
                                 } else {
                                     echo '<a href="'.$mode.'?order=pp" class="leu-table-dont-color">Performance Points';
@@ -161,8 +159,7 @@ function LeadActive($require, $current){
                                 } ?></center>
                             </th>
                         </tr>
-                        <?
-                      $x = 0;
+                        <?php                      $x = 0;
                       while ($row = mysqli_fetch_array($res)) {
                         $x = $x + 1;
                         echo '<tr>';
@@ -186,6 +183,5 @@ function LeadActive($require, $current){
 </section>
 </div>
 
-<?
-include "../../inc/footer.php";
+<?php include "../../inc/footer.php";
 ?>

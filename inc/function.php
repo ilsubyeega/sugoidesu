@@ -1,4 +1,4 @@
-<?
+<?php
 #
 #
 # SugoiDesu! (https://github.com/ilsubyeega/sugoidesu)
