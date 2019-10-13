@@ -10,7 +10,7 @@
 include "inc/include.php";
 
 # Page Settings
-$page['title'] = "Home";
+$page['title'] = $lang['pages']['home']['title'];
 $page['description'] = "idk why i am doing"; 
 $navbar_active[1] = $config['global']['servername'];
 $navbar_active[2] = "Home";
@@ -18,7 +18,7 @@ $navbar_active[2] = "Home";
 
 # Header Settings (If is not sets, it won't be shown)
 $header['background_image'] = "/assets/img/background/bluenation.jpg";
-$header['title'] = "Home";
+$header['title'] = $lang['pages']['home']['title'];
 $header['description'] = "";
 #$header['button']['text'] = "Change to Relax";
 #$header['button']['icon'] = "fas fa-exchange-alt";
@@ -34,14 +34,13 @@ include "inc/base1.php";
 ?>
 <div class="card">
               <div class="card-header">
-                <h4>Welcome to Keesu</h4>
+                <h4><?php echo $lang['pages']['home']['content']['title']; ?></h4>
               </div>
               <div class="card-body">
-                <p>Keesu is a private osu server powered by <a href="https://github.com/ilsubyeega/ruri">ruri</a> which is bancho that safe, fast for Korean.<br>
-                You can check out more features here. Keesu has Korean based community and its <a href="https://github.com/osukeesu">open source</a>!</p>
+              <?php echo $lang['pages']['home']['content']['content']; ?>
               </div>
               <div class="card-footer bg-whitesmoke">
-                Created by <a href="https://leu.kr/">ilsubyeega</a>
+              <?php echo $lang['pages']['home']['content']['footer']; ?>
               </div>
             </div>
 

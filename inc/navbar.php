@@ -72,7 +72,7 @@
 
 								<li class="nav-item <? if (isset($navbar_active[3])){ echo NavActive("Docs",
 									$navbar_active[3]); } ?>"><a href="/docs" class="nav-link"><?echo $lang['modules']['navbar']['info']['docs'];?></a></li>
-								<li class="nav-item <<? if (isset($navbar_active[3])){ echo NavActive("Licenses",
+								<li class="nav-item <? if (isset($navbar_active[3])){ echo NavActive("Licenses",
 									$navbar_active[3]); } ?>"><a href="/licenses" class="nav-link"><?echo $lang['modules']['navbar']['info']['licenses'];?></a></li>
 							</ul>
 						</li>

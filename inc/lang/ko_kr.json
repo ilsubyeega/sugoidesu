@@ -2,7 +2,46 @@
 	"lang" : "ko_kr",
 	"version" : 0,
 	"by" : "ilsubyeega",
-	"pages" : {},
+	"pages" : {
+		"home" : {
+			"title" : "홈",
+			"submenu" : "홈",
+			"content" : {
+				"title" : "Keesu에 오신 것을 환영합니다!",
+				"content" : "Keesu 는 한국인들을 위한 안전하고 빠른 <a href=\"https://github.com/ilsubyeega/ruri\">ruri</a> 기반의 서버입니다.<br>여기서 서버의 모든 기능을 확인할 수 있습니다. Keesu는 한국형 커뮤니티를 가지고 있으며. <a href=\"https://github.com/osukeesu\">오픈 소스</a>입니다!",
+				"footer" : "<a href=\"https://leu.kr/\">ilsubyeega</a>가 작성함"
+			}
+		},
+		"leaderboards" : {
+			"title" : "랭킹",
+			"description" : "타이코, Catch The Beat, 마니아는 현재 pp를 지원하지 않습니다. 스코어는 추후 계산을 위해 저장됩니다.",
+			"submenu" : "랭킹",
+			"content" : {
+				"normal" : {
+					"title" : "랭킹 (일반)"
+				},
+				"relax" : {
+					"title" : "랭킹 (릴렉스)"
+				},
+				"button" : {
+					"std" : "osu!",
+					"taiko" : "osu!taiko",
+					"ctb" : "osu!catch",
+					"mania" : "osu!mania",
+					"tonormal" : "일반으로 변경하기",
+					"torelax" : "릴렉스로 변경하기"
+				},
+				"table" : {
+					"rank" : "랭크",
+					"username" : "유저",
+					"pp" : "퍼포먼스 포인트",
+					"acc" : "정확도",
+					"totalscore" : "총 정수",
+					"playcount" : "플레이 횟수"
+				}
+			}
+		}
+	},
 	"modules" : {
 		"navbar" : {
 			"home" : "홈",

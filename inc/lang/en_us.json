@@ -2,7 +2,84 @@
 	"lang" : "en_us",
 	"version" : 0,
 	"by" : "ilsubyeega",
-	"pages" : {},
+	"pages" : {
+		"home" : {
+			"title" : "Home",
+			"submenu" : "Home",
+			"content" : {
+				"title" : "Welcome to Keesu",
+				"content" : "Keesu is a private osu server powered by <a href=\"https://github.com/ilsubyeega/ruri\">ruri</a> which is bancho that safe, fast for Korean.<br>You can check out more features here. Keesu has Korean based community and its <a href=\"https://github.com/osukeesu\">open source</a>!",
+				"footer" : "Created by <a href=\"https://leu.kr/\">ilsubyeega</a>"
+			}
+		},
+		"leaderboards" : {
+			"title" : "Leaderboard",
+			"description" : "Taiko, CTB, Mania is currently not supported for pp. Score will still be saved for future calculations.",
+			"submenu" : "Leaderboard",
+			"content" : {
+				"normal" : {
+					"title" : "Leaderboard (Normal)"
+				},
+				"relax" : {
+					"title" : "Leaderboard (Relax)"
+				},
+				"button" : {
+					"std" : "osu!",
+					"taiko" : "osu!taiko",
+					"ctb" : "osu!catch",
+					"mania" : "osu!mania",
+					"tonormal" : "Change to Normal",
+					"torelax" : "Change to Relax"
+				},
+				"table" : {
+					"rank" : "Rank",
+					"username" : "Username",
+					"pp" : "Performance Point",
+					"acc" : "Accuracy",
+					"totalscore" : "Total Score",
+					"playcount" : "Play Count"
+				}
+			}
+		},
+		"auth" : {
+			"register" : {
+				"title" : "Register",
+				"submenu" : "Register",
+				"content" : {
+					"title" : "Welcome to <span class=\"font-weight-bold\">Keesu</span> :D",
+					"content" : "Before you get started, you must login or register if you don't already have an account.",
+					"form" : {
+						"username" : "Username",
+						"email" : "Email",
+						"password" : "Password",
+						"retypepassword" : "Retype Password",
+						"alreadyread" : "I already read <a href=\"#\">Terms and Conditions</a>"
+					},
+					"button" : {
+						"login" : "Already have account?",
+						"register" : "Register"
+					},
+					"error" : {
+						"1" : "Username should be only english and numbers.",
+						"2" : "Your Username Length must higher 3 Characters!",
+						"3" : "Your Username Length must lower than 15 Characters!",
+						"4" : " is not a valid email address!",
+						"5" : "We are currently whitelisted Naver Mail only.",
+						"6" : "Your Password Must Contain At Least 8 Characters!",
+						"7" : "Your Password Must Contain At Least 1 Lowercase Letter!",
+						"8" : "Please Check You're Entered or confirmed Your Password!",
+						"9" : "Please agree the Term Of Conditions!",
+						"10" : "Sorry, Currently IP Services are down. Try again later.",
+						"11" : "Sorry, The Server is Korean only. You can only register at South Korea.",
+						"12" : "Sorry, Registrations are currently disabled.",
+						"13" : "Wait, You are multiaccounting on same ip! If you have any questions, tell us at discord server.",
+						"14" : "There is same username/email on Server!<br>But it is not verified, so look at your emails!",
+						"15" : "There is same username/email on Server!"
+					}
+				}
+			}
+		}
+	},
 	"modules" : {
 		"navbar" : {
 			"home" : "Home",
@@ -14,14 +91,20 @@
 			"info" : {
 				"title" : "Info",
 				"joindiscord" : "Join Discord",
-				"docs" : "Documentation",
-				"licenses" : "Licenses"
+				"licenses" : "Licenses",
+				"docs" : "Documentation"
 			},
 			"downloadswitcher" : "Download Switcher",
 			"auth" : {
 				"title" : "Auth",
 				"register" : "Register"
 			}
+		}
+	},
+	"global" : {
+		"mysql" : {
+			"noconnect" : "Couldn't connect to database. Please try again later.",
+			"error" : "Database just made error."
 		}
 	}
 }

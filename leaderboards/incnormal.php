@@ -22,7 +22,7 @@ $navbar_active[2] = "Leaderboards";
 # Header Settings (If is not sets, it won't be shown)
 
 
-$header['description'] = "Taiko, CTB, Mania is currently not supported for pp. Score will still be saved for future calculations.";
+$header['description'] = $lang['pages']['leaderboards']['description'];
 $header['button']['icon'] = "fas fa-exchange-alt";
 
 if (isset($_GET['order'])){
@@ -48,19 +48,19 @@ if (isset($_GET['order'])){
 }
 
 if ($relax==1) {
-    $page['title'] = "Leaderboard (Relax)";
-    $header['title'] = "Leaderboard (Relax)";
+    $page['title'] = $lang['pages']['leaderboards']['content']['relax']['title'];
+    $header['title'] = $lang['pages']['leaderboards']['content']['relax']['title'];
     $header['background_image'] = "/assets/img/background/heartnoatoaji1.jpg";
     $table = "rx_stats";
-    $header['button']['text'] = "Change to Normal";
+    $header['button']['text'] = $lang['pages']['leaderboards']['content']['button']['tonormal'];
     $header['button']['url'] = "/leaderboards/normal/".$mode;
     $navbar_active[3] = "LeadRelax";
 } else {
-    $page['title'] = "Leaderboard (Normal)";
-    $header['title'] = "Leaderboard (Normal)";
+    $page['title'] = $lang['pages']['leaderboards']['content']['normal']['title'];
+    $header['title'] = $lang['pages']['leaderboards']['content']['normal']['title'];
     $header['background_image'] = "/assets/img/background/angedublacpur.jpg";
     $table = "users_stats";
-    $header['button']['text'] = "Change to Relax";
+    $header['button']['text'] = $lang['pages']['leaderboards']['content']['button']['torelax'];
     $header['button']['url'] = "/leaderboards/relax/".$mode;
     $navbar_active[3] = "LeadNormal";
 }
@@ -102,14 +102,14 @@ function LeadActive($require, $current){
 					
 					
 					if ($relax==0) {
-                    echo '<li class="nav-item"><a href="/leaderboards/normal/std" class="nav-link '.LeadActive("std", $mode).'">Standard</a></li>&nbsp';
-                    echo '<li class="nav-item"><a href="/leaderboards/normal/taiko" class="nav-link '.LeadActive("taiko", $mode).'">Taiko</a></li>&nbsp';
-                    echo '<li class="nav-item"><a href="/leaderboards/normal/ctb" class="nav-link '.LeadActive("ctb", $mode).'">Catch The Beat</a></li>&nbsp';
-                    echo '<li class="nav-item"><a href="/leaderboards/normal/mania" class="nav-link '.LeadActive("mania", $mode).'">Mania</a></li>&nbsp';
+                    echo '<li class="nav-item"><a href="/leaderboards/normal/std" class="nav-link '.LeadActive("std", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['std'].'</a></li>&nbsp';
+                    echo '<li class="nav-item"><a href="/leaderboards/normal/taiko" class="nav-link '.LeadActive("taiko", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['taiko'].'</a></li>&nbsp';
+                    echo '<li class="nav-item"><a href="/leaderboards/normal/ctb" class="nav-link '.LeadActive("ctb", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['ctb'].'</a></li>&nbsp';
+                    echo '<li class="nav-item"><a href="/leaderboards/normal/mania" class="nav-link '.LeadActive("mania", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['mania'].'</a></li>&nbsp';
 					} else {
-						echo '<li class="nav-item"><a href="/leaderboards/relax/std" class="nav-link '.LeadActive("std", $mode).'">Standard</a></li>&nbsp';
-						echo '<li class="nav-item"><a href="/leaderboards/relax/taiko" class="nav-link '.LeadActive("taiko", $mode).'">Taiko</a></li>&nbsp';
-						echo '<li class="nav-item"><a href="/leaderboards/relax/ctb" class="nav-link '.LeadActive("ctb", $mode).'">Catch The Beat</a></li>&nbsp';
+						echo '<li class="nav-item"><a href="/leaderboards/relax/std" class="nav-link '.LeadActive("std", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['std'].'</a></li>&nbsp';
+						echo '<li class="nav-item"><a href="/leaderboards/relax/taiko" class="nav-link '.LeadActive("taiko", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['taiko'].'</a></li>&nbsp';
+						echo '<li class="nav-item"><a href="/leaderboards/relax/ctb" class="nav-link '.LeadActive("ctb", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['ctb'].'</a></li>&nbsp';
 					}
 					
 				?>
@@ -121,37 +121,37 @@ function LeadActive($require, $current){
                     <tbody>
                         <tr>
                             <th>
-                                <center>Rank</center>
+                                <center><?php echo $lang['pages']['leaderboards']['content']['table']['rank']?></center>
                             </th>
                             <th>
-                                <center>Username</center>
+                                <center><?php echo $lang['pages']['leaderboards']['content']['table']['username']?></center>
                             </th>
                             <th>
                                 <center><?php                                if ($ordere=="pp"){
-                                    echo '<a href="'.$mode.'?order=pp" class="leu-table-active">Performance Points';
+                                    echo '<a href="'.$mode.'?order=pp" class="leu-table-active">'.$lang['pages']['leaderboards']['content']['table']['pp'];
                                 } else {
-                                    echo '<a href="'.$mode.'?order=pp" class="leu-table-dont-color">Performance Points';
+                                    echo '<a href="'.$mode.'?order=pp" class="leu-table-dont-color">'.$lang['pages']['leaderboards']['content']['table']['pp'];
                                 } ?></center>
                             </th>
                             <th>
                                 <center><?if ($ordere=="avg_accuracy"){
-                                    echo '<a href="'.$mode.'?order=accuracy" class="leu-table-active">Accuracy';
+                                    echo '<a href="'.$mode.'?order=accuracy" class="leu-table-active">'.$lang['pages']['leaderboards']['content']['table']['acc'];
                                 } else {
-                                    echo '<a href="'.$mode.'?order=accuracy" class="leu-table-dont-color">Accuracy';
+                                    echo '<a href="'.$mode.'?order=accuracy" class="leu-table-dont-color">'.$lang['pages']['leaderboards']['content']['table']['acc'];
                                 } ?></center>
                             </th>
                             <th>
                                 <center><?if ($ordere=="total_score"){
-                                    echo '<a href="'.$mode.'?order=score" class="leu-table-active">Total Score';
+                                    echo '<a href="'.$mode.'?order=score" class="leu-table-active">'.$lang['pages']['leaderboards']['content']['table']['totalscore'];
                                 } else {
-                                    echo '<a href="'.$mode.'?order=score" class="leu-table-dont-color">Total Score';
+                                    echo '<a href="'.$mode.'?order=score" class="leu-table-dont-color">'.$lang['pages']['leaderboards']['content']['table']['totalscore'];
                                 } ?></center>
                             </th>
                             <th>
                                 <center><?if ($ordere=="playcount"){
-                                    echo '<a href="'.$mode.'?order=playcount" class="leu-table-active">Play Count';
+                                    echo '<a href="'.$mode.'?order=playcount" class="leu-table-active">'.$lang['pages']['leaderboards']['content']['table']['playcount'];
                                 } else {
-                                    echo '<a href="'.$mode.'?order=playcount" class="leu-table-dont-color">Play Count';
+                                    echo '<a href="'.$mode.'?order=playcount" class="leu-table-dont-color">'.$lang['pages']['leaderboards']['content']['table']['playcount'];
                                 } ?></center>
                             </th>
                         </tr>
