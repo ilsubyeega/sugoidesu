@@ -90,7 +90,20 @@
 									<li class="nav-item <? if (isset($navbar_active[3])){ echo NavActive("Register",
 										$navbar_active[3]); } ?>"><a href="/auth/register" class="nav-link"><i
 												class="fas fa-user-plus"></i>&nbsp; <?echo $lang['modules']['navbar']['auth']['register'];?></a></li>
-								
+												
+												
+												<?
+													if(isset($_COOKIE["lang"])) {
+														if ($_COOKIE["lang"] == "en_us"){
+															$ulang = "ko_kr";
+														} else {
+															$ulang = "en_us";
+														}
+													}											
+												echo '<li class="nav-item"><a href="?lang='.$ulang.'" class="nav-link">Change lang to '.$ulang.'</a></li>';
+												?>
+
+
 						</ul>
 						</li>
 					</ul>

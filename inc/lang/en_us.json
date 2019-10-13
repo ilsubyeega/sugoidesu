@@ -37,7 +37,8 @@
 					"pp" : "Performance Point",
 					"acc" : "Accuracy",
 					"totalscore" : "Total Score",
-					"playcount" : "Play Count"
+					"playcount" : "Play Count",
+					"plays" : "plays"
 				}
 			}
 		},

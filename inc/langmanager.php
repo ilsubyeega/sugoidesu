@@ -1,5 +1,13 @@
 <?php
-    if(!isset($_COOKIE["lang"])) {
+    if (isset($_GET['lang'])) {
+        if ($_GET['lang'] == "en_us" || $_GET['lang'] == "ko_kr"){
+
+        setcookie("lang", $_GET['lang'], time() + (86400 * 30), "/");
+        $uri_parts = explode('?', $_SERVER['REQUEST_URI'], 2);
+        header('Location: '.'http://' . $_SERVER['HTTP_HOST'] . $uri_parts[0]);
+        die();
+        }
+    } else if(!isset($_COOKIE["lang"])) {
         setcookie("lang", "en_us", time() + (86400 * 30), "/");
         $currlang = "en_us";
 

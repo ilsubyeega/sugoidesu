@@ -164,7 +164,7 @@ function LeadActive($require, $current){
                         echo '<td><center><div class="badge badge-info">'.number_format($row['pp_'.$mode]).'pp</div></center></td>';
                         echo '<td><center><div class="badge badge-success">'.number_format($row['avg_accuracy_'.$mode], 2).'%</div></center></td>';
                         echo '<td><center><div class="badge badge-light">'.number_format($row['total_score_'.$mode]).'</div></center></td>';
-                        echo '<td><center><div class="badge badge-primary">'.number_format($row['playcount_'.$mode]).' plays</div></center></td>';
+                        echo '<td><center><div class="badge badge-primary">'.number_format($row['playcount_'.$mode]).' '.$lang['pages']['leaderboards']['content']['table']['plays'].'</div></center></td>';
                         echo '</tr>';
                       }
                     ?>
