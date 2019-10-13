@@ -99,6 +99,8 @@
 														} else {
 															$ulang = "en_us";
 														}
+													} else {
+														$ulang = "en_us";
 													}											
 												echo '<li class="nav-item"><a href="?lang='.$ulang.'" class="nav-link">Change lang to '.$ulang.'</a></li>';
 												?>
