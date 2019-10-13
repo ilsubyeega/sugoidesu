@@ -2,5 +2,26 @@
 	"lang" : "en_us",
 	"version" : 0,
 	"by" : "ilsubyeega",
-	"pages" : {}
+	"pages" : {},
+	"modules" : {
+		"navbar" : {
+			"home" : "Home",
+			"leaderboards" : {
+				"title" : "Leaderboards",
+				"normal" : "Normal",
+				"relax" : "Relax"
+			},
+			"info" : {
+				"title" : "Info",
+				"joindiscord" : "Join Discord",
+				"docs" : "Documentation",
+				"licenses" : "Licenses"
+			},
+			"downloadswitcher" : "Download Switcher",
+			"auth" : {
+				"title" : "Auth",
+				"register" : "Register"
+			}
+		}
+	}
 }

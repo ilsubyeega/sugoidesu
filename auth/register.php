@@ -7,11 +7,7 @@
 #
 #
 #
-# Import config
-include "../inc/config.php";
-include "../inc/config_secure.php";
-global $config;
-include "../inc/function.php";
+include "../inc/include.php";
 # Web Content
 include "../inc/header.php";
 #Email content

@@ -2,5 +2,26 @@
 	"lang" : "ko_kr",
 	"version" : 0,
 	"by" : "ilsubyeega",
-	"pages" : {}
+	"pages" : {},
+	"modules" : {
+		"navbar" : {
+			"home" : "홈",
+			"leaderboards" : {
+				"title" : "랭킹",
+				"normal" : "일반",
+				"relax" : "릴렉스"
+			},
+			"info" : {
+				"title" : "정보",
+				"joindiscord" : "디스코드 입장",
+				"docs" : "문서",
+				"licenses" : "라이선스"
+			},
+			"downloadswitcher" : "스위쳐 다운로드",
+			"auth" : {
+				"title" : "인증",
+				"register" : "가입"
+			}
+		}
+	}
 }

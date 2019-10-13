@@ -7,11 +7,7 @@
 #
 #
 #
-include "../../inc/function.php";
-# Import config
-include "../../inc/config.php";
-include "../../inc/config_secure.php";
-global $config;
+include "../../inc/include.php";
 
 
 global $mode, $relax;
