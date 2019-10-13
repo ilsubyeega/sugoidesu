@@ -25,4 +25,4 @@
 
     // Set Language
     global $lang;
-    $lang = json_decode(file_get_contents("C:\Users\ilsub\Documents\Projects\sugoidesu\inc\lang/".$currlang.".json"), true);
+    $lang = json_decode(file_get_contents(__DIR__."/lang/".$currlang.".json"), true);
