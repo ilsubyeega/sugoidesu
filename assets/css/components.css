@@ -1596,7 +1596,7 @@ tr:first-child > td > .fc-day-grid-event {
     height: 75px;
     width: 75px; }
   .avatar img {
-    border-radius: 50%;
+    border-radius: 40%;
     height: 100%;
     position: relative;
     width: 100%;
