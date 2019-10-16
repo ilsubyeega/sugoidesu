@@ -91,7 +91,7 @@ $(function() {
       $(".main-sidebar .sidebar-menu li a.has-dropdown").off('click').on('click', function() {
         var me     = $(this);
         var active = false;
-        if(me.parent().hasClass("active")){
+        if(me.parent().hasClass("n-active")){
           active = true;
         }
         
@@ -100,16 +100,16 @@ $(function() {
           return false;
         });
         
-        $('.main-sidebar .sidebar-menu li.active').removeClass('active');
+        $('.main-sidebar .sidebar-menu li.active').removeClass('n-active');
 
         if(active==true) {
-          me.parent().removeClass('active');          
+          me.parent().removeClass('n-active');          
           me.parent().find('> .dropdown-menu').slideUp(500, function() {            
             update_sidebar_nicescroll();
             return false;
           });
         }else{
-          me.parent().addClass('active');          
+          me.parent().addClass('n-active');          
           me.parent().find('> .dropdown-menu').slideDown(500, function() {            
             update_sidebar_nicescroll();
             return false;
@@ -483,16 +483,16 @@ $(function() {
     var me = $(this);
 
     me.click(function() {
-      if(!me.hasClass('active')) {
+      if(!me.hasClass('n-active')) {
         var tab_group = $('[data-tab-group="' + me.data('tab') + '"]'),
             tab_group_active = $('[data-tab-group="' + me.data('tab') + '"].active'),
             target = $(me.attr('href')),
             links = $('[data-tab="'+me.data('tab') +'"]');
 
-        links.removeClass('active');
-        me.addClass('active');
-        target.addClass('active');
-        tab_group_active.removeClass('active');
+        links.removeClass('n-active');
+        me.addClass('n-active');
+        target.addClass('n-active');
+        tab_group_active.removeClass('n-active');
       }
       return false;
     });
