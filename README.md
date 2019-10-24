@@ -1,3 +1,7 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/ilsubyeega/sugoidesu?color=9cf&style=for-the-badge)
+![GitHub last commit](https://img.shields.io/badge/-WIP-red?style=for-the-badge)
+
+
 I will continue project when i finished [api](https://github.com/ilsubyeega/isabel), just if you want to know.
 
 # sugoidesu
