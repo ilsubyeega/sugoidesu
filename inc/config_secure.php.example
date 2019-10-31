@@ -1,0 +1,24 @@
+<?php
+#
+#
+# SugoiDesu! (https://github.com/ilsubyeega/sugoidesu)
+# This File is Licensed as GNU Affero General Public License v3.0
+# Find out more: https://github.com/ilsubyeega/sugoidesu/blob/master/LICENSE
+#
+#
+#
+
+# This Secure File. Do not show it!
+
+# MySQL Config
+$config['mysql']['host'] = "localhost";
+$config['mysql']['db'] = "keesu";
+$config['mysql']['id'] = "root";
+$config['mysql']['pw'] = "root";
+
+# Mail Config
+$config['mail']['host'] = "smtp.leu.kr";
+$config['mail']['port'] = 587;
+$config['mail']['username'] = "admin";
+$config['mail']['password'] = "admin";
+?>

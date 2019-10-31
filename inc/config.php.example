@@ -1,0 +1,42 @@
+<?php
+#
+#
+# SugoiDesu! (https://github.com/ilsubyeega/sugoidesu)
+# This File is Licensed as GNU Affero General Public License v3.0
+# Find out more: https://github.com/ilsubyeega/sugoidesu/blob/master/LICENSE
+#
+#
+#
+
+// Not finished
+
+# Notice: Mail, MySQL Settings are in config_secure.php
+
+$config['global']['servername'] = "Keesu";
+$config['global']['servicename'] = "Keesu (https://osu.leu.kr)";
+$config['global']['servername_safe'] = "keesu";
+$config['global']['default_lang'] = "en_US";
+
+
+# Directory Settings
+$config['directory']['main'] = "/root/"; // Directory of ruri.
+$config['directory']['avatar'] = "/home/avatars/"; // Directory of Avatars
+
+# Domain Settings
+$config['domain']['avatar'] = "a.osu.leu.kr"; // Url of avatar server.
+
+# Register settings
+$config['page']['register']['type'] = 2; // 1: Image 2: Youtube Video
+$config['page']['register']['url'] = "https://youtube.com/embed/VIS9QTUF2S0?autoplay=1&controls=0&showinfo=0&autohide=1&mute=1"; // Insert a Youtube video url or Image
+$config['page']['register']['by'] = "2ke";
+$config['page']['register']['by_url'] = "https://www.youtube.com/channel/UCqBMUERNdNyjM_KMZsLCabA";
+$config['page']['register']['by_service'] = "Youtube"; 
+$config['page']['register']['by_service_url'] = "https://www.youtube.com/channel/UCqBMUERNdNyjM_KMZsLCabA"; 
+
+# User Settings 
+$config['page']['user']['botid'] = 0; // ID of bot. When user just do "/u/(botid)", it will be returning This is bot account.
+
+# Beatmap Settings
+$config['page']['beatmaps']['api'] = 1; // 1: osu!api 2: cheesegull api
+
+?>
