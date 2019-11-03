@@ -12,8 +12,6 @@ assets/fonts/
 #Vscode
 .vscode/
 
-# Download Mailer Here https://tonhnegod.tistory.com/26
-inc/PHPMailer/
 # Remove Korean
 ko/
 
