@@ -55,7 +55,7 @@
 /* 3.1 Misc */
 @import url("//fonts.googleapis.com/css?family=Nunito:400,600,700,800");
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap%');
 
 
 
@@ -1645,7 +1645,7 @@ h6 .badge {
         border-radius: 50%; }
   .navbar .active .nav-link {
     color: #fff;
-    font-weight: 700; }
+    font-weight: 500; }
   .navbar .navbar-text {
     color: #fff; }
   .navbar .nav-link {
@@ -1962,7 +1962,7 @@ body {
   background-color: #f4f6f9;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Nunito", "Segoe UI", arial;
+  font-family: "Noto Sans KR", "Nunito", "Segoe UI", arial;
   color: #6c757d; }
 
 a.bb {

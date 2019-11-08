@@ -1567,7 +1567,7 @@ tr:first-child > td > .fc-day-grid-event {
  * Thanks to Spectre.css
  */
 .avatar {
-  background: #6777ef;
+  background: #454545;
   border-radius: 40%;
   color: #e3eaef;
   display: inline-block;
