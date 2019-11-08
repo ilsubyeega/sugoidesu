@@ -3042,9 +3042,7 @@ a:hover {
 .leu-herocustom2::before {
   border-radius: 0 0 3px 3px !important;
 }
-.leu-navright {
-  left: -120px !important;
-}
+
 .leu-mid-out {
   text-align: center !important;
 }
@@ -3117,6 +3115,9 @@ a:hover {
 .leu-avatar1 {
 	margin : 30px 0px 20px 0 !important;
 	margin-right: 0 !important;
+}
+.leu-avatar2 {
+	background: white !important;
 }
 .leu-profile-text-sm {
 	color: #ffffff !important;

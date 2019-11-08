@@ -12,7 +12,7 @@
   <div id="app">
     <section class="section">
       <div class="d-flex flex-wrap align-items-stretch">
-        <div class="col-lg-4 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
+        <div class="col-lg-4 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white leu-register">
           <div class="p-4 m-3">
             <img src="/assets/icon/favicon-96x96.png" alt="Keesu logo" width="60" class="mb-5 mt-2">
             <h4 class="text-dark font-weight-normal">Welcome to <span class="font-weight-bold">Keesu</span> :D</h4>

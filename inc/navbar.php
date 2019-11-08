@@ -81,15 +81,23 @@
 							<a href="/downloadswitcher" class="nav-link"><i class="far fa-snowflake"></i><span><?echo $lang['modules']['navbar']['downloadswitcher'];?></span></a>
 						</li></ul>
 						<ul class="navbar-nav">
-							<li class="nav-item <? if (isset($navbar_active[2])){ echo NavActive("Auth",
-								$navbar_active[2]); } ?> dropdown">
-								<a data-toggle="dropdown" class="nav-link has-dropdown "><i
-										class="fas fa-user"></i><span><?echo $lang['modules']['navbar']['auth']['title'];?></span></a>
-										<ul class="dropdown-menu leu-navright">
-
+							
+								<?
+								session_navbar_top();
+								?>
+										<ul class="dropdown-menu leu-navright" >
+										<form>
+										<? 
+										session_navbar_inside();
+										?>
+										
+										
+										
 									<li class="nav-item <? if (isset($navbar_active[3])){ echo NavActive("Register",
-										$navbar_active[3]); } ?>"><a href="/auth/register" class="nav-link"><i
-												class="fas fa-user-plus"></i>&nbsp; <?echo $lang['modules']['navbar']['auth']['register'];?></a></li>
+										$navbar_active[3]); } ?>">
+										
+										
+										
 												
 												
 												<?
@@ -102,10 +110,10 @@
 													} else {
 														$ulang = "en_us";
 													}											
-												echo '<li class="nav-item"><a href="?lang='.$ulang.'" class="nav-link">Change lang to '.$ulang.'</a></li>';
+												echo '<li><a href="?lang='.$ulang.'" class="nav-link leu-langc">Change lang to '.$ulang.'</a></li>';
 												?>
 
-
+							</form>
 						</ul>
 						</li>
 					</ul>

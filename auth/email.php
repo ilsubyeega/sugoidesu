@@ -62,17 +62,6 @@ if ($success==2){
 }
 
 
-
-// MySQL Connection owo (Not now)
-if ($success==2){
-	$mysqli = new mysqli($config['mysql']['host'], $config['mysql']['id'], $config['mysql']['pw'], $config['mysql']['db']); 
-	}
-	// If MySQL Connection Error
-	if ($mysqli->connect_errno) {
-		$success = 0;
-		$reason = "Server Is Down (1)";
-	}
-
 // Checking the key is valid
 
 if ($success==2){

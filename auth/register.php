@@ -86,19 +86,8 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 		}
 	}
 
-	// MySQL Connection owo (Not now)
-	if ($error == ""){
-		$mysqli = new mysqli($config['mysql']['host'], $config['mysql']['id'], $config['mysql']['pw'], $config['mysql']['db']); 
-		// If MySQL Connection Error
-		if ($mysqli->connect_errno) {
-			$error = $error.$errortemplate1."Sorry, The connection to database has failed: ".$mysqli->connect_error.$errortemplate2;
-		}
-	}
-
 	
 
-
-		
 		// If Registion is Enabled
 		if ($error == ""){
 			if (!$mysqli_result = $mysqli->query("SELECT  `type`,  `int` FROM `sugoidesu_settings` WHERE `type` = 'registrations_enabled' LIMIT 1")){
@@ -137,7 +126,7 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 		}
 		// If Already registered (verified, user)
 		if ($error == ""){
-			if (!$mysqli_result = $mysqli->query("SELECT * FROM `users` WHERE `username`='".$username."' OR `email`='".$email."' LIMIT 1000;")){
+			if (!$mysqli_result = $mysqli->query("SELECT * FROM `users` WHERE `username`='".$username."' OR `email`='".$email."'")){
 				$error = $error.$errortemplate1."Sorry, The databases just makes us error. (3".$mysqli->errno.")".$errortemplate2;
 			}
 			// If Value is set
