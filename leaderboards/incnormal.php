@@ -104,12 +104,12 @@ function LeadActive($require, $current){
 					if ($relax==0) {
                     echo '<li class="nav-item"><a href="/leaderboards/normal/std" class="nav-link '.LeadActive("std", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['std'].'</a></li>&nbsp';
                     echo '<li class="nav-item"><a href="/leaderboards/normal/taiko" class="nav-link '.LeadActive("taiko", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['taiko'].'</a></li>&nbsp';
-                    echo '<li class="nav-item"><a href="/leaderboards/normal/ctb" class="nav-link '.LeadActive("ctb", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['ctb'].'</a></li>&nbsp';
-                    echo '<li class="nav-item"><a href="/leaderboards/normal/mania" class="nav-link '.LeadActive("mania", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['mania'].'</a></li>&nbsp';
+                    echo '<li class="nav-item"><a href="/leaderboards/normal/ctb?order=score" class="nav-link '.LeadActive("ctb", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['ctb'].'</a></li>&nbsp';
+                    echo '<li class="nav-item"><a href="/leaderboards/normal/mania?order=score" class="nav-link '.LeadActive("mania", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['mania'].'</a></li>&nbsp';
 					} else {
 						echo '<li class="nav-item"><a href="/leaderboards/relax/std" class="nav-link '.LeadActive("std", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['std'].'</a></li>&nbsp';
 						echo '<li class="nav-item"><a href="/leaderboards/relax/taiko" class="nav-link '.LeadActive("taiko", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['taiko'].'</a></li>&nbsp';
-						echo '<li class="nav-item"><a href="/leaderboards/relax/ctb" class="nav-link '.LeadActive("ctb", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['ctb'].'</a></li>&nbsp';
+						echo '<li class="nav-item"><a href="/leaderboards/relax/ctb?order=score" class="nav-link '.LeadActive("ctb", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['ctb'].'</a></li>&nbsp';
 					}
 					
 				?>
