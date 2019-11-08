@@ -72,7 +72,7 @@ include "../../inc/header.php";
 include "../../inc/navbar.php";
 include "../../inc/base1.php";
 
-$mysqli = new mysqli($config['mysql']['host'], $config['mysql']['id'], $config['mysql']['pw'], $config['mysql']['db']);
+
 if (!mysqli_connect_errno())
   {
     $res = $mysqli->query("SELECT  `id`,  `username`,  `total_score_".$mode."`, `pp_".$mode."`, `avg_accuracy_".$mode."`, `playcount_".$mode."` FROM `".$config['mysql']['db']."`.`".$table."` ORDER BY `".$order_by."` DESC LIMIT 100;");

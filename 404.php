@@ -11,7 +11,7 @@ include "inc/include.php";
 
 # Page Settings
 $page['title'] = "Error";
-$page['description'] = "idk why i am doing"; 
+$page['description'] = "idk why i am doing";
 $navbar_active[1] = $config['global']['servername'];
 $navbar_active[2] = "Error";
 #$navbar_active[3] = "";
