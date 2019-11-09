@@ -55,7 +55,7 @@
 /* 3.1 Misc */
 @import url("//fonts.googleapis.com/css?family=Nunito:400,600,700,800");
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap%');
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
 
 
 
@@ -1962,7 +1962,7 @@ body {
   background-color: #f4f6f9;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Nunito", "Noto Sans KR", "Segoe UI", arial;
+  font-family: "NanumSquareRound", "Nunito", "Segoe UI", arial;
   color: #6c757d; }
 
 a.bb {
