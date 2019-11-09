@@ -44,7 +44,7 @@ function session_navbar_top() {
             <figure class="avatar mr-2 avatar-sm leu-avatar2">
                 <img src="https://a.osu.leu.kr/'.$_SESSION['userid'].'" alt="Non-Avatar">
             </figure>
-            <span>'.$_SESSION['username'].'</span></a>';
+            <span class="leu-comfortaa">'.$_SESSION['username'].'</span></a>';
     } else {
         echo '
             <li class="nav-item dropdown">

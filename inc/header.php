@@ -46,4 +46,12 @@
   <!-- Template CSS -->
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/components.css">
+<!--
+<style>
+body {
+  background-image: url("http://cdn.animalhi.com/1920x1080/20130222/wings%20red%20eyes%20blush%20crossovers%20long%20ears%20simple%20background%20anime%20girls%20white%20background%20accel%20world_www.animalhi.com_80.jpg");
+  backdrop-filter: blur(5px);
+}
+</style>
+-->
 </head>
