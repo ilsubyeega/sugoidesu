@@ -1645,7 +1645,7 @@ h6 .badge {
         border-radius: 50%; }
   .navbar .active .nav-link {
     color: #fff;
-    font-weight: 500; }
+    font-weight: 600; }
   .navbar .navbar-text {
     color: #fff; }
   .navbar .nav-link {
@@ -2693,7 +2693,7 @@ body.layout-3 .navbar.navbar-secondary {
       background-color: #ef67b1;
       transition: all .5s; }
     body.layout-3 .navbar.navbar-secondary .navbar-nav > .nav-item > .nav-link span {
-      line-height: 74px; }
+      line-height: 70px; }
     body.layout-3 .navbar.navbar-secondary .navbar-nav > .nav-item > .nav-link i {
       width: 30px;
       font-size: 16px; }
@@ -3137,4 +3137,80 @@ a:hover {
     flex: 0 0 100%;
     max-width: 100%;
   }
+}
+.leu-modeselect-bef {
+  border-top: 2px solid #ef67b1;
+}
+.leu-modeselect-down-bef {
+  border-top: 2px solid #ef67b1;
+}
+.leu-modeselect {
+  display: inline-flex;
+}
+.leu-modebutton {
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #ffa6d7;
+  transition-duration: 0.15s;
+  border-top: 0px solid #ef67b1;
+  margin: 0 15px 3px 15px;
+}
+
+.leu-modebutton:hover {
+  text-align: center;
+  
+  padding: 10px 10px 10px 10px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #ef67b1;
+  border-top: 3px solid #ef67b1;
+  transition-duration: 0.15s;
+  margin: 0 15px 0 15px;
+}
+.leu-modebutton-down {
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #ffa6d7;
+  transition-duration: 0.15s;
+  border-bottom: 1px solid #ef67b1;
+  margin: 2px 15px 0px 15px;
+}
+
+.leu-modebutton-down:hover {
+  text-align: center;
+  
+  padding: 10px 10px 10px 10px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #ef67b1;
+  border-bottom: 3px solid #ef67b1;
+  transition-duration: 0.15s;
+  margin: 0 15px 0 15px;
+}
+.leu-modebutton-active {
+
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #ef67b1;
+  border-top: 4.5px solid #ef67b1;
+  margin: 0 15px 0 15px;
+}
+.leu-modebutton-down-active {
+
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #ef67b1;
+  border-bottom: 4.5px solid #ef67b1;
+  margin: 0 15px 0 15px;
+}
+.leu-modebutton-active:hover {
+  color: #ef67b1;
 }

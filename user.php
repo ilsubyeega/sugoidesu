@@ -30,20 +30,7 @@ include "inc/navbar.php";
         <div class="hero text-white hero-bg-image leu-herocustom1" data-background="/assets/img/background/lune.jpg"
             style="background-image: url(&quot;/assets/img/background/lune.jpg&quot;);">
             <div class="hero-inner">
-                <h2>User Information</h2><br><div class="dropdown d-inline mr-2">
-                      <button class="btn btn-primary dropdown-toggle leu-disableshadow" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Modes
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item active" href="#">Standard</a>
-                        <a class="dropdown-item" href="#">Taiko</a>
-                        <a class="dropdown-item" href="#">Catch The Beat</a>
-                        <a class="dropdown-item" href="#">Mania</a>
-                        <a class="dropdown-item" href="#">Standard (Relax)</a>
-                        <a class="dropdown-item" href="#">Taiko (Relax)</a>
-                        <a class="dropdown-item" href="#">Catch The Beat (Relax)</a>
-                      </div>
-                    </div> 
+                <h2>User Information</h2>
             </div>
         </div>
 
@@ -53,13 +40,13 @@ include "inc/navbar.php";
                     <div class="col-lg-8">
                         <div class="author-box-left">
                             <img alt="image"
-                                src="https://cdn.discordapp.com/avatars/600605776381214738/7db15a83ccd19b7924294a9f877840cc.png"
+                                src="https://a.osu.leu.kr/1"
                                 class="rounded-rectangle author-box-picture">
                             <div class="clearfix"></div>
                         </div>
                         <div class="author-box-details">
                             <div class="author-box-name">
-                                <h5>ilsubyeega </h5>
+                                <h5 class="leu-comfortaa">ilsubyeega </h5>
                             </div>
                             <div class="author-box-job">
                                 <span class="badge badge-info" 
@@ -109,6 +96,21 @@ include "inc/navbar.php";
 </div>
 
             <div class="card">
+            <div class="leu-modeselect-bef"></div>
+            <center>
+            <div class="leu-modeselect">
+            <a href="#" class="leu-modebutton">osu!</a>
+            <a href="#" class="leu-modebutton">osu!taiko</a>
+            <a href="#" class="leu-modebutton">osu!catch</a>
+            <a href="#" class="leu-modebutton">osu!mania</a>
+            </div>
+            <br><div class="leu-modeselect">
+            <a href="#" class="leu-modebutton-down">osu! (relax)</a>
+            <a href="#" class="leu-modebutton-down">osu!taiko (relax)</a>
+            <a href="#" class="leu-modebutton-down">osu!catch (relax)</a>
+</div>
+
+            </center>
                 <div class="card-header">
                     <h4>Best Scores</h4>
                 </div>

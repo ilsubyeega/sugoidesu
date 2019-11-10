@@ -39,6 +39,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST"){
             $_SESSION['userid']=$mysqli_e['id'];
             $_SESSION['username']=$mysqli_e['username'];
             die(header('Location: '.'http://' . $_SERVER['HTTP_HOST']));
+            exit;
           } else {
             $noaccount = 1;
           }

@@ -573,7 +573,13 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .container {
+    max-width: 85%;
   }
 }
 

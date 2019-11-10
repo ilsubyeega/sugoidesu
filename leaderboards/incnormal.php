@@ -83,7 +83,7 @@ if (!mysqli_connect_errno())
 
 function LeadActive($require, $current){
 						if ($require==$current) {
-							return "active";
+							return "-active";
 						} else {
 							return "";
 						}
@@ -95,27 +95,40 @@ function LeadActive($require, $current){
 <div class="col-12 col-md-12 col-lg-12">
     <div class="card">
         <div class="card-body p-0">
-            <div class="container">
-                <br>
-                <ul class="nav nav-pills">
+        <div class="leu-modeselect-bef"></div>
+        <center>
+                <div class="leu-modeselect">
+                
 				<?php					
 					
 					
 					if ($relax==0) {
-                    echo '<li class="nav-item"><a href="/leaderboards/normal/std" class="nav-link '.LeadActive("std", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['std'].'</a></li>&nbsp';
-                    echo '<li class="nav-item"><a href="/leaderboards/normal/taiko" class="nav-link '.LeadActive("taiko", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['taiko'].'</a></li>&nbsp';
-                    echo '<li class="nav-item"><a href="/leaderboards/normal/ctb?order=score" class="nav-link '.LeadActive("ctb", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['ctb'].'</a></li>&nbsp';
-                    echo '<li class="nav-item"><a href="/leaderboards/normal/mania?order=score" class="nav-link '.LeadActive("mania", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['mania'].'</a></li>&nbsp';
-					} else {
-						echo '<li class="nav-item"><a href="/leaderboards/relax/std" class="nav-link '.LeadActive("std", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['std'].'</a></li>&nbsp';
+                        /*
+                        echo '<li class="nav-item"><a href="/leaderboards/normal/std" class="nav-link '.LeadActive("std", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['std'].'</a></li>&nbsp';
+                        echo '<li class="nav-item"><a href="/leaderboards/normal/taiko" class="nav-link '.LeadActive("taiko", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['taiko'].'</a></li>&nbsp';
+                        echo '<li class="nav-item"><a href="/leaderboards/normal/ctb?order=score" class="nav-link '.LeadActive("ctb", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['ctb'].'</a></li>&nbsp';
+                        echo '<li class="nav-item"><a href="/leaderboards/normal/mania?order=score" class="nav-link '.LeadActive("mania", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['mania'].'</a></li>&nbsp';
+                        */
+                        echo '<a href="/leaderboards/normal/std" class="leu-modebutton'.LeadActive("std", $mode).'">osu!</a>';
+                        echo '<a href="/leaderboards/normal/taiko" class="leu-modebutton'.LeadActive("taiko", $mode).'">osu!taiko</a>';
+                        echo '<a href="/leaderboards/normal/ctb?order=score" class="leu-modebutton'.LeadActive("ctb", $mode).'">osu!catch</a>';
+                        echo '<a href="/leaderboards/normal/mania?order=score" class="leu-modebutton'.LeadActive("mania", $mode).'">osu!mania</a>';
+                    } else {
+						/*echo '<li class="nav-item"><a href="/leaderboards/relax/std" class="nav-link '.LeadActive("std", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['std'].'</a></li>&nbsp';
 						echo '<li class="nav-item"><a href="/leaderboards/relax/taiko" class="nav-link '.LeadActive("taiko", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['taiko'].'</a></li>&nbsp';
 						echo '<li class="nav-item"><a href="/leaderboards/relax/ctb?order=score" class="nav-link '.LeadActive("ctb", $mode).'">'.$lang['pages']['leaderboards']['content']['button']['ctb'].'</a></li>&nbsp';
-					}
+                        */
+                        echo '<a href="/leaderboards/relax/std" class="leu-modebutton'.LeadActive("std", $mode).'">osu!</a>';
+                        echo '<a href="/leaderboards/relax/taiko" class="leu-modebutton'.LeadActive("taiko", $mode).'">osu!taiko</a>';
+                        echo '<a href="/leaderboards/relax/ctb?order=score" class="leu-modebutton'.LeadActive("ctb", $mode).'">osu!catch</a>';
+                    
+                    }
 					
 				?>
-                </ul>
+               
+                </div>
+                </center>
                 <br>
-            </div>
             <div class="table-responsive">
                 <table class="table table-striped table-md">
                     <tbody>
