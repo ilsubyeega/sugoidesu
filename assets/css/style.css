@@ -2481,7 +2481,7 @@ pre {
 .navbar,
 .main-content,
 .main-footer {
-  transition: all .5s; }
+  transition: all 0s; }
 
 body.sidebar-gone .main-sidebar {
   left: -250px; }
