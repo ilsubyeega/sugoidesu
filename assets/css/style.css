@@ -2481,7 +2481,7 @@ pre {
 .navbar,
 .main-content,
 .main-footer {
-  transition: all .5s; }
+  transition: all 0s; }
 
 body.sidebar-gone .main-sidebar {
   left: -250px; }
@@ -3155,7 +3155,7 @@ a:hover {
   color: #ffa6d7;
   transition-duration: 0.15s;
   border-top: 0px solid #ef67b1;
-  margin: 0 15px 3px 15px;
+  margin: 0 5px 3px 5px;
 }
 
 .leu-modebutton:hover {
@@ -3167,7 +3167,7 @@ a:hover {
   color: #ef67b1;
   border-top: 3px solid #ef67b1;
   transition-duration: 0.15s;
-  margin: 0 15px 0 15px;
+  margin: 0 5px 0 5px;
 }
 .leu-modebutton-down {
   text-align: center;
@@ -3177,7 +3177,7 @@ a:hover {
   color: #ffa6d7;
   transition-duration: 0.15s;
   border-bottom: 1px solid #ef67b1;
-  margin: 2px 15px 0px 15px;
+  margin: 2px 5px 0 5px;
 }
 
 .leu-modebutton-down:hover {
@@ -3189,7 +3189,7 @@ a:hover {
   color: #ef67b1;
   border-bottom: 3px solid #ef67b1;
   transition-duration: 0.15s;
-  margin: 0 15px 0 15px;
+  margin: 0 5px 0 5px;
 }
 .leu-modebutton-active {
 
@@ -3199,7 +3199,7 @@ a:hover {
   font-size: 17px;
   color: #ef67b1;
   border-top: 4.5px solid #ef67b1;
-  margin: 0 15px 0 15px;
+  margin: 0 5px 0 5px;
 }
 .leu-modebutton-down-active {
 
@@ -3209,7 +3209,7 @@ a:hover {
   font-size: 17px;
   color: #ef67b1;
   border-bottom: 4.5px solid #ef67b1;
-  margin: 0 15px 0 15px;
+  margin: 0 5px 0 5px;
 }
 .leu-modebutton-active:hover {
   color: #ef67b1;

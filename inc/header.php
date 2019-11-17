@@ -31,7 +31,7 @@
 <link rel="icon" type="image/assets/icon/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">
 <link rel="icon" type="image/assets/icon/png" sizes="96x96" href="/assets/icon/favicon-96x96.png">
 <link rel="icon" type="image/assets/icon/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
-<link rel="manifest" href="/assets/icon/manifest.json">
+<link rel="manifest" href="manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/assets/icon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ef67b1">
