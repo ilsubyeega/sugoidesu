@@ -203,10 +203,6 @@ URL(주소): https://keesu.leu.kr/auth/email?user=".$username."&key=".$verifykey
 			$emailprovider = "Naver Mail";
 			$emailurl = "https://mail.naver.com";
 		}
-		if (strpos($email, "gmail.com")){
-			$emailprovider = "Google Mail";
-			$emailurl = "https://mail.google.com";
-		}
 		if (strpos($email, "daum.net")){
 			$emailprovider = "Daum Mail";
 			$emailurl = "https://mail.daum.net";
