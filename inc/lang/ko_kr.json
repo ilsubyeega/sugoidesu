@@ -14,7 +14,7 @@
 		},
 		"leaderboards" : {
 			"title" : "랭킹",
-			"description" : "타이코, Catch The Beat, 마니아는 현재 pp를 지원하지 않습니다. 스코어는 추후 계산을 위해 저장됩니다.",
+			"description" : "CTB, 마니아는 현재 pp를 지원하지 않습니다. 스코어는 추후 계산을 위해 저장됩니다.",
 			"submenu" : "랭킹",
 			"content" : {
 				"normal" : {
