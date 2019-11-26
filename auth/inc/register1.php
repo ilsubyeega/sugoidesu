@@ -37,7 +37,7 @@
                 <label for="email">Email</label>
                 <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
                 <small id="namehelp" class="form-text text-muted">
-                  Keesu requires Naver Mail to register.
+                  Keesu requires Naver, Daum, Kakao Mail to register.
                 </small>
                 <div class="invalid-feedback">
                   Please fill in your email
