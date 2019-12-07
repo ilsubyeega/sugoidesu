@@ -173,7 +173,7 @@ function LeadActive($require, $current){
                         $x = $x + 1;
                         echo '<tr>';
                         echo '<td><center>#'.$x.'</center></td>';
-                        echo '<td><center><a class="leu-comfortaa" href="/u/'.$row['id'].'">'.$row['username'].'</a></center></td>';
+                        echo '<td><center><a class="leu-comfortaa" href="/user?u='.$row['id'].'">'.$row['username'].'</a></center></td>';
                         echo '<td><center><div class="badge badge-info">'.number_format($row['pp_'.$mode]).'pp</div></center></td>';
                         echo '<td><center><div class="badge badge-success">'.number_format($row['avg_accuracy_'.$mode], 2).'%</div></center></td>';
                         echo '<td><center><div class="badge badge-light">'.number_format($row['total_score_'.$mode]).'</div></center></td>';
