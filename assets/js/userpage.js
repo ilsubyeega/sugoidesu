@@ -8,10 +8,6 @@ function ParseRank(count300, count100, count50, countmiss, acc) {
     count50 = parseInt(count50);
     countmiss = parseInt(countmiss);
     acc = parseInt(acc);
-    console.log(count300 + " " + count100 + " " + count50 + " " + countmiss + " " + acc)
-    console.log("count300: " + count300);
-    console.log("all: " + (count300 + count100 + count50 + countmiss));
-    console.log("calc90%: " + (count300 / (count300 + count100 + count50 + countmiss) * 100));
 
     if (acc == 100) {
         return "SS";
