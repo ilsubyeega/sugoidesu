@@ -65,7 +65,7 @@ function session_navbar_inside() {
                 <div class="leu-profile-text leu-comfortaa">'.$_SESSION['username'].'</div>
             </div>
         
-            <a href="/users/'.$_SESSION['userid'].'" class="btn leu-profile-button btn-icon icon-left">
+            <a href="/user?u='.$_SESSION['userid'].'" class="btn leu-profile-button btn-icon icon-left">
             <i class="fas fa-exchange-alt"></i>&nbsp;Profile</a>
             <a href="#" class="btn leu-profile-button btn-icon icon-left">
             <i class="fas fa-exchange-alt"></i>&nbsp;Settings</a>
