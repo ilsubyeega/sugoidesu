@@ -72,17 +72,10 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 		$error = $error.$errortemplate1."Please agree the Term Of Conditions!".$errortemplate2;
 	}
 
-	// Verify country is KR from ip.zxq.co
+	// Registration lock
 	if (!($_SERVER['REMOTE_ADDR'] == "127.0.0.1" || $_SERVER['REMOTE_ADDR'] == "::1")){
-		$ip = $_SERVER['REMOTE_ADDR'];
-		$ip_c = @file_get_contents("http://ip.zxq.co/".$ip);
-		if ($ip_c == FALSE) {
-			$error = $error.$errortemplate1."Sorry, Currently IP Services are down. Try again later.".$errortemplate2;
-		} else {
-			$details = json_decode($ip_c);
-			if (!($details->country == "KR")){
-				$error = $error.$errortemplate1."Sorry, The Server is Korean only. You can only register at South Korea".$errortemplate2;
-			}
+		if (file_exists("register.lock")) {
+			$error = $error.$errortemplate1."Sorry, Registrations are locked. Try again later.".$errortemplate2;
 		}
 	}
 
