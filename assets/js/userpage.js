@@ -30,7 +30,7 @@ function RenderBest(best) {
     var tmp1 = "";
     for (var key in best) {
         var d = new Date(best[key]['time'] * 1000);
-        var dateformat = d.getFullYear() + "/" + d.getMonth()+1 + "/" + d.getDate() + " " + ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2);
+        var dateformat = d.getFullYear() + "/" + parseInt(d.getMonth())+1 + "/" + d.getDate() + " " + ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2);
         var tmp1 = tmp1 + '<tr> <td class="p-0 text-center">' + ParseRank(best[key]['300_count'], best[key]['100_count'], best[key]['50_count'], best[key]['misses_count'], best[key]['accuracy']) + '</td>' +
             '<td><a href="#" data-toggle="tooltip" data-html="true" data-original-title="?★">' + best[key]['song_name'] + '</a></td>' +
             '<td> <a data-toggle="tooltip" data-original-title="' + best[key]['max_combo'] + 'x"><center>' + numberWithCommas(best[key]['score']) + '</center></a></td>' +
@@ -59,7 +59,7 @@ function RenderRecent(recent) {
             var badge = '<div class="badge badge-danger" data-toggle="tooltip" data-original-title="Failed/Unsubmitted"><i class="fas fa-times"></i></div>';
         }
         var d = new Date(recent[key]['time'] * 1000);
-        var dateformat = d.getFullYear() + "/" + d.getMonth()+1 + "/" + d.getDate() + " " + ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2);
+        var dateformat = d.getFullYear() + "/" + parseInt(d.getMonth())+1 + "/" + d.getDate() + " " + ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2);
         var tmp1 = tmp1 + '<tr> <td class="p-0 text-center">' + rank + '</td>' +
             '<td><a href="#" data-toggle="tooltip" data-html="true" data-original-title="?★">' + recent[key]['song_name'] + '</a></td>' +
             '<td> <a data-toggle="tooltip" data-original-title="' + recent[key]['max_combo'] + 'x"><center>' + numberWithCommas(recent[key]['score']) + '</center></a></td>' +
