@@ -48,9 +48,7 @@ if ($_SERVER['REQUEST_METHOD']=="GET"){
 	if (!(filter_var($email, FILTER_VALIDATE_EMAIL))){
 		$error = $error.$errortemplate1.$email." is not a valid email address!".$errortemplate2;
 	}
-	if (!(strpos($email, "naver.com"))){
-		$error = $error.$errortemplate1."We are currently whitelisted Naver Mail only.".$errortemplate2;
-	}
+
 
 	// If Password this
 	if (strlen($_POST["password"]) <= '8') {
