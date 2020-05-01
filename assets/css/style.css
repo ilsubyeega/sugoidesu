@@ -1956,7 +1956,8 @@ a.dropdown-item {
   --dark:  #191d21; }
 
 body, html {
-  min-height: 100%; }
+  min-height: 100%;
+  scroll-behavior: smooth;}
 
 body {
   background-color: #f4f6f9;
